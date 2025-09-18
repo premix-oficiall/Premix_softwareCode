@@ -1,0 +1,152 @@
+<Styles xmlns="https://github.com/avaloniaui"
+       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+   <Design.PreviewWith>
+       <Border Padding="20">
+           <!-- Add Controls for Previewer Here -->
+           <Button HorizontalAlignment="Stretch">
+               <StackPanel Orientation="Horizontal">
+                   <Image Classes="icon" Source="{SvgImage /Assets/Icons/func_metas_ativas.svg}" Width="22"></Image>
+                   <Label Classes="font" Content="Entregas"></Label>
+               </StackPanel>
+           </Button>
+       </Border>
+   </Design.PreviewWith>
+
+
+   <!-- Add Styles Here -->
+  
+   <!--Fixing the text from buttons-->
+   <Style Selector="Label.font">
+      <Setter Property="Padding" Value="10 0 10 0"></Setter>
+   </Style>
+
+
+
+
+   <Style Selector="Border">
+      <Setter Property="Transitions">
+          <Transitions>
+              <DoubleTransition Property="Width" Duration="0:0:1"></DoubleTransition>
+          </Transitions>
+      </Setter>
+   </Style>
+
+
+
+
+   <Style Selector="Button">
+      <Setter Property="FontSize" Value="19"></Setter>
+      <!--Fixing icon with padding-->
+      <Setter Property="Padding" Value="5 5 5 5"></Setter>
+      <Setter Property="Foreground" Value="{DynamicResource PrimaryForeground}"></Setter>
+      <Setter Property="Background" Value="{DynamicResource PrimaryBackground}"></Setter>
+   </Style>
+
+
+
+
+   <Style Selector="Button.transparent:pointerover /template/ ContentPresenter">
+      <Setter Property="RenderTransform" Value="scale(1.1)"></Setter>
+      <Setter Property="Background" Value="Transparent"></Setter>
+   </Style>
+
+
+
+
+   <Style Selector="Button:pointerover /template/ ContentPresenter">
+      <Setter Property="Foreground" Value="{DynamicResource FuncPrimaryHoverForeground}"></Setter>
+      <Setter Property="Background" Value="{DynamicResource FuncPrimaryHoverBackground}"></Setter>
+   </Style>
+
+
+
+
+   <Style Selector="Button.active /template/ ContentPresenter">
+      <Setter Property="Background" Value="{DynamicResource FuncPrimaryActiveHoverBackground}">
+        
+      </Setter>
+      <Setter Property="RenderTransform" Value="scale(1)"></Setter>
+    
+   </Style>
+    
+   <Styles> <!-- Pagina ENTREGAS -->
+        
+          <!-- Botão “chip” (filtros) -->
+          <Style Selector="Button.chip">
+              <Setter Property="Background" Value="#121212"/>
+              <Setter Property="Foreground" Value="{DynamicResource Col.Text}"/>
+              <Setter Property="BorderBrush" Value="#2B2B2B"/>
+              <Setter Property="BorderThickness" Value="1"/>
+              <Setter Property="CornerRadius" Value="18"/>
+              <Setter Property="Padding" Value="14,6"/>
+              <Setter Property="FontSize" Value="14"/>
+              <Setter Property="Cursor" Value="Hand"/>
+              <Setter Property="MinWidth" Value="80"/>
+              <Setter Property="HorizontalAlignment" Value="Center"/>
+              
+              <Style Selector="^:pointerover">
+                  <Setter Property="BorderBrush" Value="{DynamicResource Col.Border}"/>
+                  <Setter Property="Background" Value="#1A1A1A"/>
+              </Style>
+          </Style>
+
+
+          <!-- Botão primário -->
+          <Style Selector="Button.primary">
+              <Setter Property="Background" Value="{DynamicResource Col.Purple}"/>
+              <Setter Property="Foreground" Value="{DynamicResource Col.Text}"/>
+              <Setter Property="BorderThickness" Value="0"/>
+              <Setter Property="CornerRadius" Value="16"/>
+              <Setter Property="Padding" Value="14,8"/>
+              <Setter Property="Cursor" Value="Hand"/>
+              <Setter Property="FontWeight" Value="SemiBold"/>
+              <Setter Property="FontSize" Value="15"/>
+
+              <Style Selector="^:pointerover">
+                  <Setter Property="Background" Value="#3B1D65"/>
+              </Style>
+          </Style>
+
+          <!-- Caixa de busca -->
+          <Style Selector="TextBox.search">
+              <Setter Property="Background" Value="#121212"/>
+              <Setter Property="Foreground" Value="{DynamicResource Col.Text}"/>
+              <Setter Property="BorderBrush" Value="#2B2B2B"/>
+              <Setter Property="BorderThickness" Value="1"/>
+              <Setter Property="CornerRadius" Value="20"/>
+              <Setter Property="Padding" Value="14,8,40,8"/>
+              <Setter Property="Watermark" Value="Pesquisar Tarefa"/>
+              <Setter Property="FontSize" Value="14"/>
+
+              <Style Selector="^:focus">
+                  <Setter Property="BorderBrush" Value="{DynamicResource Col.Border}"/>
+              </Style>
+          </Style>
+
+          <!-- DropZone (arrastar arquivos) -->
+          <Style Selector="Border.dropzone">
+              <Setter Property="Background" Value="#121212"/>
+              <Setter Property="BorderBrush" Value="{DynamicResource Col.Purple}"/>
+              <Setter Property="BorderThickness" Value="2"/>
+              <Setter Property="CornerRadius" Value="12"/>
+              <Setter Property="Padding" Value="12"/>
+          </Style>
+
+          <!-- Card de Tarefa -->
+          <Style Selector="Border.card">
+              <Setter Property="Background" Value="#1A1A1A"/>
+              <Setter Property="BorderBrush" Value="#2B2B2B"/>
+              <Setter Property="BorderThickness" Value="1"/>
+              <Setter Property="CornerRadius" Value="14"/>
+              <Setter Property="Margin" Value="0,8,0,8"/>
+          </Style>
+   </Styles>
+   
+   <!-- Página configurações -->
+   <Styles>
+      <Style Selector="Button.notificacoes:pointerover /template/ ContentPresenter">
+          <Setter Property="Background" Value="Transparent"></Setter>
+          <Setter Property="BorderBrush" Value="#3B1D65"></Setter>
+      </Style>
+   </Styles>
+</Styles>

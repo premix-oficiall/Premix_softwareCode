@@ -1,0 +1,118 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="1100" d:DesignHeight="900"
+             xmlns:vm="clr-namespace:Premix.ViewModels"
+             x:DataType="vm:RecompensaPageViewModel"
+             Background="Black"
+             Foreground="White"
+             x:Class="Premix.Views.RecompensaPageView">
+    
+    <Design.DataContext><vm:RecompensaPageViewModel></vm:RecompensaPageViewModel></Design.DataContext>
+    
+    <UserControl.Styles>
+        <StyleInclude Source="avares://Premix/Styles/PremixStyles.axaml"/>
+    </UserControl.Styles>
+    
+    <Border Padding="20">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/> <!-- Header -->
+                <RowDefinition Height="Auto"/> <!-- Filtros -->
+                <RowDefinition Height="*"/>    <!-- Conteúdo -->
+            </Grid.RowDefinitions>
+
+            <!-- Header -->
+            <StackPanel Grid.Row="0" Margin="0 0 0 30">
+                <TextBlock Text="Controle de Recompensas" FontWeight="Bold" FontSize="32"/>
+            </StackPanel>
+
+            <!-- Filters -->
+            <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="0 0 0 30">
+                <Button Width="140" Height="40" Margin="0 0 15 0"
+                        BorderBrush="#FBCA48" BorderThickness="2"
+                        Background="Transparent" Foreground="White" CornerRadius="15">
+                    <TextBlock Text="Departamento" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                </Button>
+                <Button Width="140" Height="40" Margin="0 0 15 0"
+                        BorderBrush="#FBCA48" BorderThickness="2"
+                        Background="Transparent" Foreground="White" CornerRadius="15">
+                    <TextBlock Text="Funcionário" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                </Button>
+                <Button Width="140" Height="40" Margin="0 0 15 0"
+                        BorderBrush="#FBCA48" BorderThickness="2"
+                        Background="Transparent" Foreground="White" CornerRadius="15">
+                    <TextBlock Text="Recompensa" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                </Button>
+            </StackPanel>
+
+            <!-- Main Content -->
+            <Grid Grid.Row="2" ColumnDefinitions="3*,4*,3*">
+                <!-- Catálogo -->
+                <Border Padding="15" BorderBrush="#FBCA48" BorderThickness="2" Background="Transparent" CornerRadius="15" Margin="0 0 15 0">
+                    <StackPanel>
+                        <TextBlock Text="Catálogo" FontSize="18" FontWeight="Bold" Margin="0 0 0 10"/>
+                        <ItemsControl ItemsSource="{Binding Catalogo}">
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <Border BorderBrush="#FBCA48" BorderThickness="1" CornerRadius="10" Padding="10" Margin="0 6">
+                                        <StackPanel Orientation="Horizontal" Spacing="10">
+                                            <!-- Ícone opcional aqui -->
+                                            <StackPanel>
+                                                <TextBlock Text="{Binding Nome}" FontSize="16" Foreground="#FBCA48"/>
+                                                <TextBlock Text="{Binding Descricao}" FontSize="12"/>
+                                            </StackPanel>
+                                        </StackPanel>
+                                    </Border>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                    </StackPanel>
+                </Border>
+
+                <!-- Atribuir sua Meta + Criar (placeholder por enquanto) -->
+                <Border Grid.Column="1" Padding="15" BorderBrush="#FBCA48" BorderThickness="2" Background="Transparent" CornerRadius="15" Margin="0 0 15 0">
+                    <StackPanel Spacing="10">
+                        <TextBlock Text="Atribuir sua Meta + Criar" FontSize="18" FontWeight="Bold"/>
+                        <TextBlock Text="Dica: Você pode trocar/adicionar a sua recompensa!" FontSize="12"/>
+                        <!-- Aqui depois ligamos metas + ações (Trocar/Adicionar) -->
+                        <Border BorderBrush="#FBCA48" BorderThickness="1" CornerRadius="10" Padding="10">
+                            <TextBlock Text="[Área para vincular Meta ↔ Recompensa]" />
+                        </Border>
+                    </StackPanel>
+                </Border>
+
+                <!-- Criar Recompensa -->
+                <Border Grid.Column="2" Padding="15" BorderBrush="#FBCA48" BorderThickness="2" Background="Transparent" CornerRadius="15">
+                    <StackPanel Spacing="8">
+                        <TextBlock Text="Criar Recompensa" FontSize="18" FontWeight="Bold" Margin="0 0 0 10"/>
+
+                        <TextBlock Text="Nome"/>
+                        <TextBox Text="{Binding Nome, Mode=TwoWay}" TextWrapping="Wrap" Margin="0 0 0 8"/>
+
+                        <TextBlock Text="Descrição"/>
+                        <TextBox Text="{Binding Descricao, Mode=TwoWay}" AcceptsReturn="True" Height="70" TextWrapping="Wrap" Margin="0 0 0 8"/>
+
+                        <TextBlock Text="Imagem"/>
+                        <TextBox Text="{Binding Imagem, Mode=TwoWay}" Margin="0 0 0 16"/>
+
+                        <StackPanel Orientation="Horizontal" Spacing="10">
+                            <Button Width="110" Height="36" BorderBrush="#FBCA48" BorderThickness="2" Background="Transparent" Foreground="White" CornerRadius="15">
+                                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                                    <TextBlock Text="Cancelar"></TextBlock>
+                                </StackPanel>
+                            </Button>
+                            <Button Width="110" Height="36" Command="{Binding AdicionarRecompensaCommand}" BorderBrush="#FBCA48" BorderThickness="2"
+                                    Background="#FBCA48" Foreground="Black" CornerRadius="15" HorizontalAlignment="Right" VerticalAlignment="Center">
+                                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                                    <TextBlock Text="Criar"></TextBlock>
+                                </StackPanel>
+                            </Button>
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+            </Grid>
+        </Grid>
+    </Border>
+</UserControl>

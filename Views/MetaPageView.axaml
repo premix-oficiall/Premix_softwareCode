@@ -1,0 +1,156 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="clr-namespace:Premix.ViewModels"
+             mc:Ignorable="d" d:DesignWidth="1100" d:DesignHeight="900"
+             Background="Black"
+             Foreground="White"
+             x:DataType="vm:MetaPageViewModel"
+             x:Class="Premix.Views.MetaPageView">
+    
+    <Design.DataContext><vm:MetaPageViewModel></vm:MetaPageViewModel></Design.DataContext>
+    
+    <UserControl.Styles>
+        <StyleInclude Source="avares://Premix/Styles/PremixStyles.axaml"/>
+    </UserControl.Styles>
+    
+    <Border Padding="20">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/> <!-- Header -->
+                <RowDefinition Height="Auto"/> <!-- Primeira linha de botões -->
+                <RowDefinition Height="Auto"/> <!-- Lista + Criar Meta -->
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            
+            <!--HEADER-->
+            <StackPanel Grid.Column="0" Grid.Row="0"  Margin="0 0 0 30">
+                <TextBlock Margin="0 0 0 10" HorizontalAlignment="Left" Text="Metas" FontWeight="Bold" FontSize="45"></TextBlock>
+            </StackPanel>
+            
+            <!--Top Buttons-->
+            <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="0 0 0 30">
+                <Button Width="140" Height="40" Margin="0 0 15 0" BorderBrush="#FBCA48" BorderThickness="2" Background="Transparent" Foreground="White" CornerRadius="15">
+                    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Spacing="8">
+                        <TextBlock Text="Departamento" FontSize="16" TextWrapping="Wrap" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+                <Button Width="140" Height="40" Margin="0 0 15 0" BorderBrush="#FBCA48" BorderThickness="2" Background="Transparent" Foreground="White" CornerRadius="15">
+                    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Spacing="8">
+                        <TextBlock Text="Funcionário" FontSize="16" TextWrapping="Wrap" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+                <Button Width="140" Height="40" Margin="0 0 15 0" BorderBrush="#FBCA48" BorderThickness="2" Background="Transparent" Foreground="White" CornerRadius="15">
+                    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Spacing="8">
+                        <TextBlock Text="Status" FontSize="16" TextWrapping="Wrap" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+            
+            <!--Botão criar-->
+            <StackPanel Grid.Row="2" Margin="0 0 0 20">
+                <Button Width="450" Height="45"
+                        BorderBrush="Gold" BorderThickness="2"
+                        Background="#FBCA48" Foreground="Black"
+                        FontWeight="Bold" CornerRadius="15"
+                        Command="{Binding OpenCreateMenuCommand}">
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Left">
+                        <Image Margin="20 0 0 0" Classes="icon" Source="{SvgImage /Assets/IconsCriarPage/mais.svg}" Width="25"/>
+                        <TextBlock Padding="20 0 0 0" Text="Criar Novo Tarefa" FontSize="25"/>
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+            
+            <!--Tabela e outros-->
+            <!--Here it starts the table code-->
+            <Border Grid.Row="3" Padding="15" BorderBrush="#FBCA48" BorderThickness="2" Background="Transparent" CornerRadius="15">
+                <!-- TABELA -->
+                <DataGrid
+                    ItemsSource="{Binding Meta}"
+                    AutoGenerateColumns="False"
+                    HeadersVisibility="Column"
+                    GridLinesVisibility="None"
+                    Background="Transparent"
+                    Foreground="White"
+                    BorderBrush="Transparent"
+                    RowHeight="45"
+                    RowBackground="#141414"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch">
+    
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Nome da Meta" Binding="{Binding Nome}" Width="2*"/>
+                        <DataGridTextColumn Header="Progresso" Binding="{Binding Progresso}" Width="*"/>
+                        <DataGridTextColumn Header="Vencimento" Binding="{Binding Vencimento}" Width="3*"/>
+                        <DataGridTextColumn Header="Recompensa" Binding="{Binding Recompensa}" Width="2*"/>
+                        <DataGridTemplateColumn Header="Ações" Width="180">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <StackPanel Orientation="Horizontal" Spacing="10">
+                                        <!-- Botão Editar -->
+                                        <Button Content="Editar"
+                                                x:CompileBindings="False"
+                                                DataContext="{Binding $parent[UserControl].DataContext}"
+                                                Command="{Binding EditarMetaCommand}"
+                                                CommandParameter="{Binding $parent[DataGridRow].DataContext}"
+                                                Width="80" Height="30"
+                                                Background="Transparent" BorderBrush="White" Foreground="White"/>
+
+                                        <!-- Botão Excluir -->
+                                        <Button Content="Excluir"
+                                                x:CompileBindings="False"
+                                                DataContext="{Binding $parent[UserControl].DataContext}"
+                                                Command="{Binding ExcluirMetaCommand}"
+                                                CommandParameter="{Binding $parent[DataGridRow].DataContext}"
+                                                Width="80" Height="30"
+                                                Background="Transparent" BorderBrush="Red" Foreground="Red"/>
+                                    </StackPanel>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Border>
+            
+            <!-- MENU DE CRIAÇÃO -->
+            <ContentControl Grid.RowSpan="4" IsVisible="{Binding IsMenuCriarVisible}">
+                <Border Background="#222" CornerRadius="10" Padding="20" Width="400" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <StackPanel Spacing="10">
+                        <TextBlock Text="Novo Meta" FontSize="20" FontWeight="Bold"/>
+                        <TextBox Watermark="Nome" Text="{Binding NovaMetaNome}"/>
+                        <TextBox Watermark="Progresso" Text="{Binding NovaMetaProgresso}"/>
+                        <TextBox Watermark="Vencimento" Text="{Binding NovaMetaVencimento}"/>
+                        <TextBox Watermark="Recompensa" Text="{Binding NovaMetaRecompensa}"/>
+                        <TextBox Watermark="Descrição" Text="{Binding NovaMetaDescricao}"/>
+                        
+                        
+                        <StackPanel Orientation="Horizontal" Spacing="10" HorizontalAlignment="Right">
+                            <Button Content="Cancelar" Command="{Binding CancelarCriarMetaCommand}"/>
+                            <Button Content="Salvar" Command="{Binding CriarMetaCommand}"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+            </ContentControl>
+            
+            <!-- MENU DE EDIÇÃO -->
+            <ContentControl Grid.RowSpan="4" IsVisible="{Binding IsMenuEditarVisible}">
+                <Border Background="#222" CornerRadius="10" Padding="20" Width="400" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <StackPanel Spacing="10">
+                        <TextBlock Text="Editar Metas" FontSize="20" FontWeight="Bold"/>
+                        <TextBox Watermark="Nome" Text="{Binding EditarMetaNome}"/>
+                        <TextBox Watermark="Progresso" Text="{Binding EditarMetaProgresso}"/>
+                        <TextBox Watermark="Vencimento" Text="{Binding EditarMetaVencimento}"/>
+                        <TextBox Watermark="Recompensa" Text="{Binding EditarMetaRecompensa}"/>
+                        <TextBox Watermark="Descrição" Text="{Binding EditarMetaDescricao}"/>
+                        
+                        <StackPanel Orientation="Horizontal" Spacing="10" HorizontalAlignment="Right">
+                            <Button Content="Cancelar" Command="{Binding CancelarEdicaoMetaCommand}"/>
+                            <Button Content="Salvar" Command="{Binding SalvarEdicaoMetaCommand}"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+            </ContentControl>
+        </Grid>
+    </Border>
+</UserControl>

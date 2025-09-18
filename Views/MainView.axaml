@@ -1,0 +1,93 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="1024" d:DesignHeight="600"
+        Width="1400" Height="800"
+        MinWidth="1400" MinHeight="800"
+        x:Class="Premix.MainView"
+        xmlns:vm="clr-namespace:Premix.ViewModels"
+        x:DataType="vm:MainViewModel"
+        Title="Premix">
+        
+        <Design.DataContext><vm:MainViewModel></vm:MainViewModel></Design.DataContext>
+        
+        <Window.Styles>
+                <StyleInclude Source="avares://Premix/Styles/PremixStyles.axaml"/>
+        </Window.Styles>
+     
+        <Grid Background="{DynamicResource PrimaryBackground}" ColumnDefinitions="Auto, *">
+                
+                <ContentControl Grid.Column="1" Content="{Binding CurrentPage}"/>
+                
+                <Border Padding="20" Background="{DynamicResource PrimaryBackgroundGradient}" Width="{Binding SomeWidth}">
+                        <Grid RowDefinitions="*, Auto">
+                                <StackPanel Spacing="17">
+                                        <Image PointerPressed="InputElement_OnPointerPressed" Source="{SvgImage /Assets/Images/logo.svg}" Width="150" IsVisible="{Binding SideMenuExpanded}"></Image>
+                                        <Image PointerPressed="InputElement_OnPointerPressed" Source="{SvgImage /Assets/Images/icon.svg}" Width="22" IsVisible="{Binding !SideMenuExpanded}"></Image>
+                                        
+                                        <Button HorizontalAlignment="Stretch" Classes.active="{Binding InicioPageIsActive}" Command="{Binding GoToInicioCommand}">
+                                                <StackPanel Orientation="Horizontal">
+                                                        <Image Classes="icon" Source="{SvgImage /Assets/Icons/inicio1.svg}" Width="22"></Image>
+                                                        <Label Classes="font" Content="Início" IsVisible="{Binding SideMenuExpanded}"></Label>
+                                                </StackPanel>
+                                        </Button>
+                                        <Button HorizontalAlignment="Stretch" Classes.active="{Binding CriarPageIsActive}" Command="{Binding GoToCriarCommand}">
+                                                <StackPanel Orientation="Horizontal">
+                                                        <Image Classes="icon" Source="{SvgImage /Assets/Icons/criarDepartamentos.svg}" Width="22"></Image>
+                                                        <Label Classes="font" Content="Criar" IsVisible="{Binding SideMenuExpanded}"></Label>
+                                                </StackPanel>
+                                        </Button>
+                                        <Button HorizontalAlignment="Stretch" Classes.active="{Binding EditarPageIsActive}" Command="{Binding GoToEditarCommand}">
+                                                <StackPanel Orientation="Horizontal">
+                                                        <Image Classes="icon" Source="{SvgImage /Assets/Icons/editarDepartamento.svg}" Width="22"></Image>
+                                                        <Label Classes="font" Content="Editar" IsVisible="{Binding SideMenuExpanded}"></Label>
+                                                </StackPanel>
+                                        </Button>
+                                        <Button HorizontalAlignment="Stretch" Classes.active="{Binding MetaPageIsActive}" Command="{Binding GoToMetaCommand}">
+                                                <StackPanel Orientation="Horizontal">
+                                                        <Image Classes="icon" Source="{SvgImage /Assets/Icons/adicionarMetas.svg}" Width="22"></Image>
+                                                        <Label Classes="font" Content="Meta" IsVisible="{Binding SideMenuExpanded}"></Label>
+                                                </StackPanel>
+                                        </Button>
+                                        <Button HorizontalAlignment="Stretch" Classes.active="{Binding TarefaPageIsActive}" Command="{Binding GoToTarefaCommand}">
+                                                <StackPanel Orientation="Horizontal">
+                                                        <Image Classes="icon" Source="{SvgImage /Assets/Icons/adicionarTarefa.svg}" Width="22"></Image>
+                                                        <Label Classes="font" Content="Tarefa" IsVisible="{Binding SideMenuExpanded}"></Label>
+                                                </StackPanel>
+                                        </Button>
+                                        <Button HorizontalAlignment="Stretch" Classes.active="{Binding DesempenhoPageIsActive}" Command="{Binding GoToDesempenhoCommand}">
+                                                <StackPanel Orientation="Horizontal">
+                                                        <Image Classes="icon" Source="{SvgImage /Assets/Icons/analiseDesempenho.svg}" Width="22"></Image>
+                                                        <Label Classes="font" Content="Desempenho" IsVisible="{Binding SideMenuExpanded}"></Label>
+                                                </StackPanel>
+                                        </Button>
+                                        <Button HorizontalAlignment="Stretch" Classes.active="{Binding ClassificacaoPageIsActive}" Command="{Binding GoToClassificacaoCommand}">
+                                                <StackPanel Orientation="Horizontal">
+                                                        <Image Classes="icon" Source="{SvgImage /Assets/Icons/classificacao.svg}" Width="22"></Image>
+                                                        <Label Classes="font" Content="Classificação" IsVisible="{Binding SideMenuExpanded}"></Label>
+                                                </StackPanel>
+                                        </Button>
+                                        <Button HorizontalAlignment="Stretch" Classes.active="{Binding RecompensaPageIsActive}" Command="{Binding GoToRecompensaCommand}">
+                                                <StackPanel Orientation="Horizontal">
+                                                        <Image Classes="icon" Source="{SvgImage /Assets/Icons/recompensa.svg}" Width="22"></Image>
+                                                        <Label Classes="font" Content="Recompensa" IsVisible="{Binding SideMenuExpanded}"></Label>
+                                                </StackPanel>
+                                        </Button>
+                                        <Button HorizontalAlignment="Stretch" Classes.active="{Binding ConfiguracaoPageIsActive}" Command="{Binding GoToConfiguracaoCommand}">
+                                                <StackPanel Orientation="Horizontal">
+                                                        <Image Classes="icon" Source="{SvgImage /Assets/Icons/configuracao.svg}" Width="22"></Image>
+                                                        <Label Classes="font" Content="Configuração" IsVisible="{Binding SideMenuExpanded}"></Label>
+                                                </StackPanel>
+                                        </Button>
+                                        <Button HorizontalAlignment="Stretch" Click="BtnSair_Click" >
+                                                <StackPanel Orientation="Horizontal">
+                                                        <Image Classes="icon" Source="{SvgImage /Assets/Icons/perfil.svg}" Width="22"></Image>
+                                                        <Label Classes="font" Content="Sair" IsVisible="{Binding SideMenuExpanded}"></Label>
+                                                </StackPanel>
+                                        </Button>
+                                </StackPanel>
+                        </Grid>
+                </Border>
+        </Grid>
+</Window>

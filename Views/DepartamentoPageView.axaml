@@ -1,0 +1,153 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+            xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+            xmlns:vm="clr-namespace:Premix.ViewModels"
+            mc:Ignorable="d" d:DesignWidth="1100" d:DesignHeight="900"
+            Background="Black"
+            Foreground="White"
+            x:DataType="vm:DepartamentoPageViewModel"
+            x:Class="Premix.Views.DepartamentoPageView">
+  
+   <Design.DataContext><vm:DepartamentoPageViewModel/></Design.DataContext>
+  
+   <UserControl.Styles>
+     <StyleInclude Source="avares://Premix/Styles/PremixStyles.axaml"/>
+   </UserControl.Styles>
+
+
+   <Border Padding="20">
+ <Grid RowDefinitions="Auto,Auto,Auto,*">
+
+
+   <!-- HEADER -->
+   <StackPanel Grid.Row="0" Margin="0 0 0 30">
+     <TextBlock Margin="0 0 0 10" HorizontalAlignment="Left"
+                Text="Departamentos" FontWeight="Bold" FontSize="45"/>
+     <TextBlock HorizontalAlignment="Left"
+                Text="Organize as áreas da sua empresa de maneira eficiente" FontSize="24"/>
+   </StackPanel>
+
+
+   <!-- CARDS -->
+   <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="0 0 0 30">
+       <!-- Ativos -->
+       <Button Width="270" Height="150" Margin="0 0 15 0" BorderBrush="Gold" BorderThickness="2"
+               Background="Transparent" Foreground="White" CornerRadius="15">
+           <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Spacing="8">
+               <Image Classes="icon" Source="{SvgImage /Assets/IconsCriarPage/departAtivo.svg}" Width="35"/>
+               <TextBlock Text="Departamentos Ativos" FontSize="17" HorizontalAlignment="Center"/>
+               <TextBlock Text="{Binding DepartamentosAtivos}" FontSize="30" FontWeight="Bold" HorizontalAlignment="Center"/>
+           </StackPanel>
+       </Button>
+
+
+       <!-- Inativos -->
+       <Button Width="270" Height="150" Margin="0 0 15 0" BorderBrush="Gold" BorderThickness="2"
+               Background="Transparent" Foreground="White" CornerRadius="15">
+           <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Spacing="8">
+               <Image Classes="icon" Source="{SvgImage /Assets/IconsCriarPage/departInativo.svg}" Width="35"/>
+               <TextBlock Text="Departamentos Inativos" FontSize="17" HorizontalAlignment="Center"/>
+               <TextBlock Text="{Binding DepartamentosInativos}" FontSize="30" FontWeight="Bold" HorizontalAlignment="Center"/>
+           </StackPanel>
+       </Button>
+
+
+       <!-- Sem departamento -->
+       <Button Width="270" Height="150" Margin="0 0 15 0" BorderBrush="Gold" BorderThickness="2"
+               Background="Transparent" Foreground="White" CornerRadius="15">
+           <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Spacing="8">
+               <Image Classes="icon" Source="{SvgImage /Assets/IconsCriarPage/userX.svg}" Width="35"/>
+               <TextBlock Text="Funcionários sem departamento" FontSize="17" HorizontalAlignment="Center"/>
+               <TextBlock Text="{Binding FuncionariosSemDepartamento}" FontSize="30" FontWeight="Bold" HorizontalAlignment="Center"/>
+           </StackPanel>
+       </Button>
+   </StackPanel>
+
+
+   <!-- BOTÃO CRIAR -->
+   <StackPanel Grid.Row="2" Margin="0 0 0 20">
+     <Button Width="450" Height="45"
+             BorderBrush="Gold" BorderThickness="2"
+             Background="#FBCA48" Foreground="Black"
+             FontWeight="Bold" CornerRadius="15"
+             Command="{Binding OpenCreateMenuCommand}">
+       <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Left">
+         <Image Margin="20 0 0 0" Classes="icon" Source="{SvgImage /Assets/IconsCriarPage/mais.svg}" Width="25"/>
+         <TextBlock Padding="20 0 0 0" Text="Criar Novo Departamento" FontSize="25"/>
+       </StackPanel>
+     </Button>
+   </StackPanel>
+
+
+   <!-- TABELA -->
+   <DataGrid Grid.Row="3"
+             ItemsSource="{Binding Departamentos}"
+             AutoGenerateColumns="False"
+             HeadersVisibility="Column"
+             GridLinesVisibility="None"
+             Background="Transparent"
+             Foreground="White"
+             BorderBrush="Transparent"
+             RowHeight="45"
+             RowBackground="#141414">
+     <DataGrid.Columns>
+       <DataGridTextColumn Header="Nome do Departamento" Binding="{Binding Nome}" Width="*"/>
+       <DataGridTextColumn Header="Código" Binding="{Binding Codigo}" Width="200"/>
+       <DataGridTextColumn Header="Status" Binding="{Binding Status}" Width="150"/>
+       <DataGridTemplateColumn Header="Ações" Width="150">
+         <DataGridTemplateColumn.CellTemplate>
+           <DataTemplate>
+             <Button Content="Editar"
+                     x:CompileBindings="False"
+                     DataContext="{Binding $parent[UserControl].DataContext}"
+                     Command="{Binding EditarDepartamentoCommand}"
+                     CommandParameter="{Binding $parent[DataGridRow].DataContext}"
+                     Width="80" Height="30"
+                     Background="Transparent" BorderBrush="White" Foreground="White"/>
+           </DataTemplate>
+         </DataGridTemplateColumn.CellTemplate>
+       </DataGridTemplateColumn>
+     </DataGrid.Columns>
+   </DataGrid>
+
+
+   <!-- MENU DE CRIAÇÃO -->
+   <ContentControl Grid.RowSpan="4"
+                   IsVisible="{Binding IsMenuCriarVisible}">
+     <Border Background="#222" CornerRadius="10" Padding="20" Width="400" HorizontalAlignment="Center" VerticalAlignment="Center">
+       <StackPanel Spacing="10">
+         <TextBlock Text="Novo Departamento" FontSize="20" FontWeight="Bold"/>
+         <TextBox Watermark="Nome" Text="{Binding NovoDepartamentoNome}"/>
+         <TextBox Classes = "Codigo" Watermark="Código" Text="{Binding NovoDepartamentoCodigo}" MaxLength="8"/>
+         <CheckBox Content="Ativo" IsChecked="{Binding NovoDepartamentoAtivo}"/>
+         <StackPanel Orientation="Horizontal" Spacing="10" HorizontalAlignment="Right">
+           <Button Content="Cancelar" Command="{Binding CancelarCriarDepartamentoCommand}"/>
+           <Button Content="Salvar" Command="{Binding CriarDepartamentoCommand}"/>
+         </StackPanel>
+       </StackPanel>
+     </Border>
+   </ContentControl>
+  
+   <!-- MENU DE EDIÇÃO -->
+   <ContentControl Grid.RowSpan="4"
+                   IsVisible="{Binding IsMenuEditarVisible}">
+     <Border Background="#222" CornerRadius="10" Padding="20" Width="400" HorizontalAlignment="Center" VerticalAlignment="Center">
+       <StackPanel Spacing="10">
+         <TextBlock Text="Editar Departamento" FontSize="20" FontWeight="Bold"/>
+         <TextBox Watermark="Nome" Text="{Binding EditarDepartamentoNome}"/>
+         <TextBox Classes = "Codigo" Watermark="Código" Text="{Binding EditarDepartamentoCodigo}" MaxLength="8"/>
+         <CheckBox Content="Ativo" IsChecked="{Binding EditarDepartamentoAtivo}"/>
+         <StackPanel Orientation="Horizontal" Spacing="10" HorizontalAlignment="Right">
+           <Button Content="Cancelar" Command="{Binding CancelarEdicaoDepartamentoCommand}"/>
+           <Button Content="Salvar" Command="{Binding SalvarEdicaoDepartamentoCommand}"/>
+         </StackPanel>
+       </StackPanel>
+     </Border>
+   </ContentControl>
+  
+ </Grid>
+</Border>
+  
+  
+</UserControl>

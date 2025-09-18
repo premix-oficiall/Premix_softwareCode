@@ -1,0 +1,100 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="1100" d:DesignHeight="900"
+             xmlns:vm="clr-namespace:Premix.ViewModels"
+             Background="Black"
+             Foreground="White"
+             x:DataType="vm:InicioPageViewModel"
+             x:Class="Premix.Views.InicioPageView">
+    
+    <Design.DataContext><vm:InicioPageViewModel></vm:InicioPageViewModel></Design.DataContext>
+    
+    <UserControl.Styles>
+        <StyleInclude Source="avares://Premix/Styles/PremixStyles.axaml"/>
+    </UserControl.Styles>
+    
+    <Border Padding="20" Background="Black">
+        <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/> <!-- Header -->
+                <RowDefinition Height="Auto"/> <!-- Primeira linha de botões -->
+                <RowDefinition Height="Auto"/> <!-- Segunda linha de botões -->
+            </Grid.RowDefinitions>
+
+            <!-- HEADER -->
+            <StackPanel Grid.Row="0" Margin="0 0 0 30" VerticalAlignment="Center">
+                <TextBlock HorizontalAlignment="Center" Text="Olá [nome]!" FontWeight="Bold" FontSize="25" Foreground="White"/>
+                <TextBlock HorizontalAlignment="Center" Text="Bem vindo a sua área de trabalho:" FontSize="25" Foreground="White"/>
+                <TextBlock HorizontalAlignment="Center" Text="[nome empresa]" FontSize="25" Foreground="White"/>
+            </StackPanel>
+
+            <!-- PRIMEIRA LINHA DE BOTÕES -->
+            <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 0 0 30">
+                <Button Width="200" Height="170" Margin="8 0 8 0" BorderBrush="Gold" BorderThickness="2" Background="Transparent" Foreground="White" CornerRadius="15">
+                    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Spacing="8">
+                        <Image Classes="icon" Source="{SvgImage /Assets/IconsInicio/funcCadastrado.svg}" Width="40"/>
+                        <TextBlock Text="Funcionários cadastrados" FontSize="17" TextWrapping="Wrap" TextAlignment="Center" HorizontalAlignment="Center"/>
+                        <TextBlock Text="10" FontSize="30" FontWeight="Bold" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+
+                <Button Width="200" Height="170" Margin="8 0 8 0" BorderBrush="Gold" BorderThickness="2" Background="Transparent" Foreground="White" CornerRadius="15">
+                    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Spacing="8">
+                        <Image Classes="icon" Source="{SvgImage /Assets/IconsInicio/departamentos.svg}" Width="40"/>
+                        <TextBlock Text="Departamentos" FontSize="17" TextWrapping="Wrap" TextAlignment="Center" HorizontalAlignment="Center"/>
+                        <TextBlock Text="10" FontSize="30" FontWeight="Bold" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+
+                <Button Width="200" Height="170" Margin="8 0 8 0" BorderBrush="Gold" BorderThickness="2" Background="Transparent" Foreground="White" CornerRadius="15">
+                    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Spacing="8">
+                        <Image Classes="icon" Source="{SvgImage /Assets/IconsInicio/metasAtivas.svg}" Width="40"/>
+                        <TextBlock Text="Metas Ativas" FontSize="17" TextWrapping="Wrap" TextAlignment="Center" HorizontalAlignment="Center"/>
+                        <TextBlock Text="10" FontSize="30" FontWeight="Bold" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+
+                    
+            <!-- SEGUNDA LINHA DE BOTÕES -->
+            <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0" >
+                <Button Width="200" Height="170" Margin="8 0 8 0" BorderBrush="Gold" BorderThickness="2" Background="Transparent" Foreground="White" CornerRadius="15">
+                    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Spacing="8">
+                        <Image Classes="icon" Source="{SvgImage /Assets/IconsInicio/novosDepartamentos.svg}" Width="40"/>
+                        <TextBlock Text="Criar Novos Departamentos" FontSize="17" TextWrapping="Wrap" TextAlignment="Center" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+
+                <Button Width="200" Height="170" Margin="8 0" BorderBrush="Gold" BorderThickness="2" Background="Transparent" Foreground="White" CornerRadius="15">
+                    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Spacing="8">
+                        <Image Classes="icon" Source="{SvgImage /Assets/IconsInicio/editarDepartamento.svg}" Width="40"/>
+                        <TextBlock Text="Editar Departamentos" FontSize="17" TextWrapping="Wrap" TextAlignment="Center" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+
+                <Button Width="200" Height="170" Margin="8 0" BorderBrush="Gold" BorderThickness="2" Background="Transparent" Foreground="White" CornerRadius="15">
+                    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Spacing="8">
+                        <Image Classes="icon" Source="{SvgImage /Assets/IconsInicio/metas.svg}" Width="40"/>
+                        <TextBlock Text="Adicionar Metas" FontSize="17" TextWrapping="Wrap" TextAlignment="Center" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+
+                <Button Width="200" Height="170" Margin="8 0" BorderBrush="Gold" BorderThickness="2" Background="Transparent" Foreground="White" CornerRadius="15">
+                    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Spacing="8">
+                        <Image Classes="icon" Source="{SvgImage /Assets/IconsInicio/tarefa.svg}" Width="40"/>
+                        <TextBlock Text="Adicionar Tarefas" FontSize="17" TextWrapping="Wrap" TextAlignment="Center" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+
+                <Button Width="200" Height="170" Margin="8 0" BorderBrush="Gold" BorderThickness="2" Background="Transparent" Foreground="White" CornerRadius="15">
+                    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Spacing="8">
+                        <Image Classes="icon" Source="{SvgImage /Assets/IconsInicio/classificacaoFunc.svg}" Width="40"/>
+                        <TextBlock Text="Classificação dos funcionários" FontSize="17" TextWrapping="Wrap" TextAlignment="Center" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+        </Grid>
+   </Border>
+</UserControl>

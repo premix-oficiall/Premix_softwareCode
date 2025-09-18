@@ -1,0 +1,61 @@
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Design.PreviewWith>
+        <Border Padding="20">
+            <!-- Add Controls for Previewer Here -->
+        </Border>
+    </Design.PreviewWith>
+
+    <!-- Add Styles Here -->
+    <!-- TextBox código -->
+    <Style Selector="TextBox.codigo">
+        <Setter Property="Background" Value="Gray"/>
+        <Setter Property="Foreground" Value="Black"/>
+        <Setter Property="BorderBrush" Value="#3B1D65"/>
+        <Setter Property="BorderThickness" Value="2"/>
+        <Setter Property="CornerRadius" Value="6"/>
+        <Setter Property="Padding" Value="8"/>
+    </Style>
+
+    <!-- Quando o TextBox está em foco -->
+    <Style Selector="TextBox.codigo:focus">
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="BorderBrush" Value="#3B1D65"/>
+        <Setter Property="Foreground" Value="Black"/>
+    </Style>
+
+
+    <!-- Botão entrar -->
+    <Style Selector="Button.entrar">
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="BorderBrush" Value="#3B1D65"/>
+        <Setter Property="BorderThickness" Value="2"/>
+        <Setter Property="CornerRadius" Value="6"/>
+        <Setter Property="Padding" Value="8"/>
+        <Setter Property="Transitions">
+            <Transitions>
+                <!-- Suavidade ao animar -->
+                <TransformOperationsTransition Property="RenderTransform" Duration="0:0:0.2"/>
+                <BrushTransition Property="Background" Duration="0:0:0.2"/>
+            </Transitions>
+        </Setter>
+        <!-- Escala normal -->
+        <Setter Property="RenderTransform" Value="scale(1,1)"/>
+    </Style>
+
+    <!-- Botão hover -->
+    <Style Selector="Button.entrar:pointerover">
+        <Setter Property="Background" Value="#3B1D65"/>
+        <Setter Property="RenderTransform" Value="scale(1.05,1.05)"/>
+        <Setter Property="Foreground" Value="White"/>
+    </Style>
+
+    <!-- Botão foco (quando recebe tab focus) -->
+    <Style Selector="Button.entrar:focus">
+        <Setter Property="Background" Value="White"/>
+        <Setter Property="BorderBrush" Value="#3B1D65"/>
+        <Setter Property="Foreground" Value="White"/>
+    </Style>
+
+</Styles>

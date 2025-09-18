@@ -1,0 +1,162 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net9.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <BuiltInComInteropSupport>true</BuiltInComInteropSupport>
+        <ApplicationManifest>app.manifest</ApplicationManifest>
+        <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Avalonia" Version="11.3.4" />
+        <PackageReference Include="Avalonia.Controls.DataGrid" Version="11.3.4" />
+        <PackageReference Include="Avalonia.Desktop" Version="11.3.4" />
+        <PackageReference Include="Avalonia.Svg.Skia" Version="11.3.0" />
+        <PackageReference Include="Avalonia.Themes.Fluent" Version="11.3.4" />
+        <PackageReference Include="Avalonia.Fonts.Inter" Version="11.3.4" />
+        <!--Condition below is needed to remove Avalonia.Diagnostics package from build output in Release configuration.-->
+        <PackageReference Include="Avalonia.Diagnostics" Version="11.3.4">
+            <IncludeAssets Condition="'$(Configuration)' != 'Debug'">None</IncludeAssets>
+            <PrivateAssets Condition="'$(Configuration)' != 'Debug'">All</PrivateAssets>
+        </PackageReference>
+        <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0" />
+        <PackageReference Include="LiveChartsCore.SkiaSharpView.Avalonia" Version="2.0.0-rc5.4" />
+        <PackageReference Include="MongoDB.Driver" Version="2.*" />
+        <PackageReference Include="MessageBox.Avalonia" Version="3.*" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Assets\IconsConfiguracao\" />
+      <Folder Include="Assets\IconsCriarPage\" />
+      <Folder Include="Assets\IconsInicio\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Assets\Images\shortLogo.png" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Assets\Images\shortLogo.jpeg" />
+      <None Remove="Assets\Fonts\adicionar metas.svg" />
+      <None Remove="Assets\Fonts\adicionar tarefa.svg" />
+      <None Remove="Assets\Fonts\analise de desempenho.svg" />
+      <None Remove="Assets\Fonts\criar novos departamentos.svg" />
+      <None Remove="Assets\Fonts\editar departamento.svg" />
+      <None Remove="Assets\Fonts\profile.svg" />
+      <None Remove="Assets\Fonts\settings.svg" />
+      <None Remove="Assets\Fonts\star.svg" />
+      <None Remove="Assets\Fonts\trophy.svg" />
+      <None Remove="Assets\Fonts\adicionarMetas.svg" />
+      <None Remove="Assets\Fonts\adicionarTarefa.svg" />
+      <None Remove="Assets\Fonts\analiseDesempenho.svg" />
+      <None Remove="Assets\Fonts\classificacao.svg" />
+      <None Remove="Assets\Fonts\configuracao.svg" />
+      <None Remove="Assets\Fonts\controleRecompensa.svg" />
+      <None Remove="Assets\Fonts\criarDepartamentos.svg" />
+      <None Remove="Assets\Fonts\editarDepartamento.svg" />
+      <None Remove="Assets\Fonts\perfil.svg" />
+      <None Remove="Assets\Icons\adicionarMetas.svg" />
+      <AvaloniaResource Include="Assets\Icons\adicionarMetas.svg" />
+      <None Remove="Assets\Icons\adicionarTarefa.svg" />
+      <AvaloniaResource Include="Assets\Icons\adicionarTarefa.svg" />
+      <None Remove="Assets\Icons\analiseDesempenho.svg" />
+      <AvaloniaResource Include="Assets\Icons\analiseDesempenho.svg" />
+      <None Remove="Assets\Icons\classificacao.svg" />
+      <AvaloniaResource Include="Assets\Icons\classificacao.svg" />
+      <None Remove="Assets\Icons\configuracao.svg" />
+      <AvaloniaResource Include="Assets\Icons\configuracao.svg" />
+      <None Remove="Assets\Icons\controleRecompensa.svg" />
+      <AvaloniaResource Include="Assets\Icons\controleRecompensa.svg" />
+      <None Remove="Assets\Icons\criarDepartamentos.svg" />
+      <AvaloniaResource Include="Assets\Icons\criarDepartamentos.svg" />
+      <None Remove="Assets\Icons\editarDepartamento.svg" />
+      <AvaloniaResource Include="Assets\Icons\editarDepartamento.svg" />
+      <None Remove="Assets\Icons\perfil.svg" />
+      <AvaloniaResource Include="Assets\Icons\perfil.svg" />
+      <None Remove="Assets\Icons\recompensa.svg" />
+      <AvaloniaResource Include="Assets\Icons\recompensa.svg" />
+      <None Remove="Assets\Images\iconLogo.svg" />
+      <AvaloniaResource Include="Assets\Images\icon.svg" />
+      <None Remove="Assets\Images\logo.svg" />
+      <AvaloniaResource Include="Assets\Images\logo.svg" />
+      <None Remove="Assets\Icons\inicio.svg" />
+      <AvaloniaResource Include="Assets\Icons\inicio.svg" />
+      <None Remove="Assets\Icons\inicio1.svg" />
+      <AvaloniaResource Include="Assets\Icons\inicio1.svg" />
+      <None Remove="Assets\IconsPages\classificacaoFunc.svg" />
+      <AvaloniaResource Include="Assets\IconsInicio\classificacaoFunc.svg" />
+      <None Remove="Assets\IconsPages\departamentos.svg" />
+      <AvaloniaResource Include="Assets\IconsInicio\departamentos.svg" />
+      <None Remove="Assets\IconsPages\editarDepartamento.svg" />
+      <AvaloniaResource Include="Assets\IconsInicio\editarDepartamento.svg" />
+      <None Remove="Assets\IconsPages\funcCadastrado.svg" />
+      <AvaloniaResource Include="Assets\IconsInicio\funcCadastrado.svg" />
+      <None Remove="Assets\IconsPages\metas.svg" />
+      <AvaloniaResource Include="Assets\IconsInicio\metas.svg" />
+      <None Remove="Assets\IconsPages\metasAtivas.svg" />
+      <AvaloniaResource Include="Assets\IconsInicio\metasAtivas.svg" />
+      <None Remove="Assets\IconsPages\novosDepartamentos.svg" />
+      <AvaloniaResource Include="Assets\IconsInicio\novosDepartamentos.svg" />
+      <None Remove="Assets\IconsPages\tarefa.svg" />
+      <AvaloniaResource Include="Assets\IconsInicio\tarefa.svg" />
+      <None Remove="Assets\IconsCriarPage\folder-x.svg" />
+      <AvaloniaResource Include="Assets\IconsCriarPage\departInativo.svg" />
+      <None Remove="Assets\IconsCriarPage\plus 1.svg" />
+      <AvaloniaResource Include="Assets\IconsCriarPage\mais.svg" />
+      <None Remove="Assets\IconsCriarPage\puzzle.svg" />
+      <AvaloniaResource Include="Assets\IconsCriarPage\departAtivo.svg" />
+      <None Remove="Assets\IconsCriarPage\user-x.svg" />
+      <AvaloniaResource Include="Assets\IconsCriarPage\userX.svg" />
+      <None Remove="Assets\Icons\alvo.svg" />
+      <AvaloniaResource Include="Assets\Icons\alvo.svg" />
+      <None Remove="Assets\IconsConfiguracao\chave.svg" />
+      <AvaloniaResource Include="Assets\IconsConfiguracao\chave.svg" />
+      <None Remove="Assets\IconsConfiguracao\doubusers.svg" />
+      <AvaloniaResource Include="Assets\IconsConfiguracao\doubusers.svg" />
+      <None Remove="Assets\IconsConfiguracao\sino.svg" />
+      <AvaloniaResource Include="Assets\IconsConfiguracao\sino.svg" />
+      <None Remove="Assets\Icons\func_config_user.svg" />
+      <AvaloniaResource Include="Assets\Icons\func_config_user.svg" />
+      <None Remove="Assets\Icons\func_configuracao.svg" />
+      <AvaloniaResource Include="Assets\Icons\func_configuracao.svg" />
+      <None Remove="Assets\Icons\func_desempenho.svg" />
+      <AvaloniaResource Include="Assets\Icons\func_desempenho.svg" />
+      <None Remove="Assets\Icons\func_entregas.svg" />
+      <AvaloniaResource Include="Assets\Icons\func_entregas.svg" />
+      <None Remove="Assets\Icons\func_home.svg" />
+      <AvaloniaResource Include="Assets\Icons\func_home.svg" />
+      <None Remove="Assets\Icons\func_meta.svg" />
+      <AvaloniaResource Include="Assets\Icons\func_meta.svg" />
+      <None Remove="Assets\Icons\func_metas_ativas.svg" />
+      <AvaloniaResource Include="Assets\Icons\func_metas_ativas.svg" />
+      <None Remove="Assets\Icons\func_perfil.svg" />
+      <AvaloniaResource Include="Assets\Icons\func_perfil.svg" />
+      <None Remove="Assets\Icons\func_preparacao.svg" />
+      <AvaloniaResource Include="Assets\Icons\func_preparacao.svg" />
+      <None Remove="Assets\Icons\func_sino.svg" />
+      <AvaloniaResource Include="Assets\Icons\func_sino.svg" />
+      <None Remove="Assets\Icons\func_user.svg" />
+      <AvaloniaResource Include="Assets\Icons\func_user.svg" />
+      <None Remove="Assets\Images\func_premix_roxa.svg" />
+      <AvaloniaResource Include="Assets\Images\func_premix_roxa.svg" />
+      <None Remove="Assets\Images\func_icon.svg" />
+      <AvaloniaResource Include="Assets\Images\func_icon.svg" />
+      <None Remove="Assets\Images\LogoBranca.svg" />
+      <AvaloniaResource Include="Assets\Images\LogoBranca.svg" />
+      <None Remove="Assets\Images\shortLogoBranca.svg" />
+      <AvaloniaResource Include="Assets\Images\shortLogoBranca.svg" />
+      <AvaloniaXaml Remove="Styles\FuncCodigoStyles.axaml" />
+      <AvaloniaResource Include="Styles\FuncCodigoStyles.axaml" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="Views\MainView.axaml.cs">
+        <DependentUpon>MainView.axaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+    </ItemGroup>
+
+    
+
+</Project>

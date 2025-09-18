@@ -1,0 +1,104 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="1100" d:DesignHeight="900"
+             xmlns:vm="clr-namespace:Premix.ViewModels"
+             Background="Black"
+             Foreground="White"
+             x:DataType="vm:ClassificacaoPageViewModel"
+             x:Class="Premix.Views.ClassificacaoPageView">
+    
+    <Design.DataContext><vm:ClassificacaoPageViewModel></vm:ClassificacaoPageViewModel></Design.DataContext>
+    
+    <UserControl.Styles>
+        <StyleInclude Source="avares://Premix/Styles/PremixStyles.axaml"/>
+    </UserControl.Styles>
+    
+    <Border Padding="20" Background="Black">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/> <!-- Header -->
+            <RowDefinition Height="Auto"/> <!-- Cards -->
+            <RowDefinition Height="*"/>    <!-- Ranking -->
+        </Grid.RowDefinitions>
+
+        <!--Header-->
+        <StackPanel Grid.Row="0" Margin="30 0 0 30" Orientation="Horizontal">
+            <TextBlock Text="Classificação dos Funcionários" FontWeight="Bold" FontSize="28" Foreground="White"/>
+        </StackPanel>
+
+        <!-- Main Content: Buttons -->
+        <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="30 0 0 30">
+            <Button Width="270" Height="110" Margin="0 0 15 0" 
+                    BorderBrush="Gold" BorderThickness="2" 
+                    Background="Transparent" Foreground="White"
+                    Padding="10" CornerRadius="15">
+                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <TextBlock Text="Desempenho Médio" FontSize="18" Foreground="White" HorizontalAlignment="Center"/>
+                    <TextBlock Text="78%" FontSize="42" FontWeight="Bold" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </Button>
+            <Button Width="270" Height="110" Margin="0 0 15 0" 
+                    BorderBrush="Gold" BorderThickness="2" 
+                    Background="Transparent" Foreground="White"
+                    Padding="10" CornerRadius="15">
+                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <TextBlock Text="Entregas no Prazo" FontSize="18" Foreground="White" HorizontalAlignment="Center"/>
+                    <TextBlock Text="85%" FontSize="42" FontWeight="Bold" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </Button>
+        </StackPanel>
+
+        <!-- Main Content: Ranking -->
+        <Border Grid.Row="2" Background="#222" CornerRadius="10" Padding="25" Margin="30 0 30 0">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/> <!-- Cabeçalho -->
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50"/>
+                    <ColumnDefinition Width="210"/>
+                    <ColumnDefinition Width="240"/>
+                    <ColumnDefinition Width="120"/>
+                </Grid.ColumnDefinitions>
+
+                <!-- Cabeçalho -->
+                <TextBlock Grid.Row="0" Grid.Column="1" Text="Tecnologia da Informação" Foreground="Gold" FontWeight="Bold" FontSize="15"  Margin="0 0 0 10"/>
+                <TextBlock Grid.Row="0" Grid.Column="2" Text="Metas" Foreground="Gold" FontWeight="Bold"  FontSize="20" Margin="0 0 0 10"/>
+                <TextBlock Grid.Row="0" Grid.Column="3" Text="Desempenho" Foreground="Gold" FontWeight="Bold" FontSize="15" Margin="0 0 0 10"/>
+
+                <!-- Linha 1 -->
+                <TextBlock Grid.Row="1" Grid.Column="0" Text="1" Foreground="Gold" FontWeight="Bold" FontSize="20"/>
+                <TextBlock Grid.Row="1" Grid.Column="1" Text="João Carvalho" Foreground="White" FontSize="20"/>
+                <ProgressBar Grid.Row="1" Grid.Column="2" Value="97" Maximum="100" Height="12" Foreground="Gold"/>
+                <TextBlock Grid.Row="1" Grid.Column="3" Text="97%" Foreground="White" FontSize="15" Margin="15 0 0 0"/>
+
+                <!-- Linha 2 -->
+                <TextBlock Grid.Row="2" Grid.Column="0" Text="2" Foreground="Gold" FontWeight="Bold" FontSize="20"/>
+                <TextBlock Grid.Row="2" Grid.Column="1" Text="Pedro da Silva" Foreground="White" FontSize="20"/>
+                <ProgressBar Grid.Row="2" Grid.Column="2" Value="80" Maximum="100" Height="12" Foreground="Gold"/>
+                <TextBlock Grid.Row="2" Grid.Column="3" Text="80%" Foreground="White" FontSize="15" Margin="15 0 0 0"/>
+
+                <!-- Linha 3 -->
+                <TextBlock Grid.Row="3" Grid.Column="0" Text="3" Foreground="Gold" FontWeight="Bold" FontSize="20"/>
+                <TextBlock Grid.Row="3" Grid.Column="1" Text="Miguel Oliveira" Foreground="White" FontSize="20"/>
+                <ProgressBar Grid.Row="3" Grid.Column="2" Value="70" Maximum="100" Height="12" Foreground="Gold"/>
+                <TextBlock Grid.Row="3" Grid.Column="3" Text="70%" Foreground="White" FontSize="15" Margin="15 0 0 0"/>
+
+                <!-- Linha 4 -->
+                <TextBlock Grid.Row="4" Grid.Column="0" Text="4" Foreground="Gold" FontWeight="Bold" FontSize="20"/>
+                <TextBlock Grid.Row="4" Grid.Column="1" Text="Ricardo Souza" Foreground="White" FontSize="20"/>
+                <ProgressBar Grid.Row="4" Grid.Column="2" Value="45" Maximum="100" Height="12" Foreground="Gold"/>
+                <TextBlock Grid.Row="4" Grid.Column="3" Text="45%" Foreground="White" FontSize="15" Margin="15 0 0 0"/>
+            </Grid>
+        </Border>
+    </Grid>
+</Border>
+
+
+</UserControl>

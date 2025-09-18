@@ -1,0 +1,61 @@
+<Application xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="Premix.App"
+             xmlns:local="clr-namespace:Premix"
+             RequestedThemeVariant="Default">
+             <!-- "Default" ThemeVariant follows system theme variant. "Dark" or "Light" are other available options. -->
+             <Application.DataTemplates>
+                 <local:ViewLocator></local:ViewLocator>
+             </Application.DataTemplates>
+
+    <!--<Application.Styles>
+        <FluentTheme />
+        <StyleInclude Source="Styles/PremixStyles.axaml"></StyleInclude>
+        <StyleInclude Source="Styles/LoginStyles.axaml"></StyleInclude>
+        <StyleInclude Source="Styles/FuncPremixStyles.axaml"></StyleInclude>
+    </Application.Styles>-->
+    
+             <Application.Styles>
+                 <FluentTheme />
+                 <StyleInclude Source="avares://Avalonia.Controls.DataGrid/Themes/Fluent.xaml"/>
+             </Application.Styles>
+             
+             <Application.Resources>
+                 <SolidColorBrush x:Key="PrimaryForeground">#CFCFCF</SolidColorBrush>
+                 <SolidColorBrush x:Key="PrimaryBackground">#000000</SolidColorBrush>
+                 
+                 <!--Gradient code if we decide to use-->
+                 <!--<LinearGradientBrush x:Key="PrimaryBackgroundGradient" StartPoint="0%, 0%" EndPoint="100%, 0%">
+                     <GradientStop Offset="0" Color="#000000"></GradientStop>
+                     <GradientStop Offset="1" Color="#353535"></GradientStop>
+                 </LinearGradientBrush>-->
+                 <SolidColorBrush x:Key="PrimaryBackgroundGradient">#1F1F1F</SolidColorBrush>
+                 <SolidColorBrush x:Key="PrimaryHoverBackground">#FBCA48</SolidColorBrush>
+                 <SolidColorBrush x:Key="PrimaryActiveHoverBackground">#FBCA48</SolidColorBrush>
+                 <SolidColorBrush x:Key="PrimaryHoverForeground">White</SolidColorBrush>
+                 
+                 <!--hover das telas do funcionário-->
+                 <SolidColorBrush x:Key="FuncPrimaryBackgroundGradient">#1F1F1F</SolidColorBrush>
+                 <SolidColorBrush x:Key="FuncPrimaryHoverBackground">#3B1D65</SolidColorBrush>
+                 <SolidColorBrush x:Key="FuncPrimaryActiveHoverBackground">#3B1D65</SolidColorBrush>
+                 <SolidColorBrush x:Key="FuncPrimaryHoverForeground">White</SolidColorBrush>
+                 
+                 <!--Paleta de cores-->
+                 <SolidColorBrush x:Key="Col.Text" Color="White"/>
+                 <SolidColorBrush x:Key="Col.Border" Color="#3B1D65"/>
+                 <SolidColorBrush x:Key="Col.Purple" Color="#3B1D65"/>
+             </Application.Resources>
+             
+             <!--Código tabela-->
+             <Application.Styles>
+                 <FluentTheme />
+                 <!-- 🔴 NECESSÁRIO para o DataGrid aparecer -->
+                 <StyleInclude Source="avares://Avalonia.Controls.DataGrid/Themes/Fluent.xaml"/>
+             </Application.Styles>
+             
+             <Application.Styles>
+                 <FluentTheme/>
+                 <StyleInclude Source="avares://Premix/Styles/FuncCodigoStyles.axaml"/>
+             </Application.Styles>
+
+</Application>

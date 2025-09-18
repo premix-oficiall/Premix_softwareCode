@@ -1,0 +1,91 @@
+<Styles xmlns="https://github.com/avaloniaui"
+       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+   <Design.PreviewWith>
+       <Border Padding="20">
+           <!-- Add Controls for Previewer Here -->
+           <Button Classes="cadastro" Content="Cadastrar" Width="150" Height="35" Background="Transparent" Foreground="Black" HorizontalAlignment="Center" BorderBrush="Black" BorderThickness="2" FontWeight="Bold" Margin="0,20,0,0" CornerRadius="20" HorizontalContentAlignment="Center"/>
+       </Border>
+   </Design.PreviewWith>
+
+
+   <!-- Add Styles Here -->
+  
+   <!--LOGIN GESTOR-->
+  
+   <Styles>
+       <!-- Botão Gestor -->
+       <Style Selector="Button.Gestor:pointerover /template/ ContentPresenter">
+           <Setter Property="Background" Value="{DynamicResource PrimaryHoverBackground}"></Setter>
+           <Setter Property="Foreground" Value="Black"></Setter>
+           <Setter Property="BorderBrush" Value="#B3B3B3"></Setter>
+           <Setter Property="BorderThickness" Value="1"></Setter>
+       </Style>
+      
+      
+       <!-- Botão Funcionário -->
+       <Style Selector="Button.func:pointerover /template/ ContentPresenter">
+           <Setter Property="Background" Value="Black"/>
+           <Setter Property="Foreground" Value="{DynamicResource PrimaryForeground}"/>
+           <Setter Property="BorderBrush" Value="#B3B3B3"></Setter>
+           <Setter Property="BorderThickness" Value="1"></Setter>
+       </Style>
+      
+       <!--Botão Cadastrar-->
+       <Style Selector="Button.cadastro:pointerover /template/ ContentPresenter">
+           <Setter Property="Background" Value="Transparent"></Setter>
+           <Setter Property="Foreground" Value="Black"></Setter>
+           <Setter Property="BorderBrush" Value="black"></Setter>
+           <Setter Property="BorderThickness" Value="2"></Setter>
+       </Style>
+      
+       <!--Botão Logar-->
+       <Style Selector="Button.logar:pointerover /template/ ContentPresenter">
+           <Setter Property="Background" Value="Transparent"></Setter>
+           <Setter Property="BorderBrush" Value="#FFCC33"></Setter>
+           <Setter Property="Foreground" Value="#FFCC33"></Setter>
+           <Setter Property="BorderThickness" Value="2"></Setter>
+       </Style>
+   </Styles>
+  
+   <!--LOGIN FUNCIONARIO:-->
+  
+   <Styles>
+      
+       <!--Botão funcionario-->
+      
+       <Style Selector="Button.func_func:pointerover /template/ ContentPresenter">
+           <Setter Property="Background" Value="#3B1D65"></Setter>
+           <Setter Property="Foreground" Value="#B3B3B3"></Setter>
+           <Setter Property="BorderBrush" Value="#B3B3B3"></Setter>
+           <Setter Property="BorderThickness" Value="1"></Setter>
+       </Style>
+      
+       <!--Botão Gestor:-->
+      
+       <Style Selector="Button.func_gestor:pointerover /template/ ContentPresenter">
+           <Setter Property="Background" Value="{DynamicResource PrimaryBackground}"></Setter>
+           <Setter Property="Foreground" Value="#B3B3B3"></Setter>
+           <Setter Property="BorderBrush" Value="#B3B3B3"></Setter>
+       </Style>
+      
+       <!--Botão Login-->
+      
+       <Style Selector="Button.func_logar:pointerover /template/ ContentPresenter">
+           <Setter Property="Background" Value="Transparent"></Setter>
+           <Setter Property="BorderBrush" Value="#6718D5"></Setter>
+           <Setter Property="Foreground" Value="#6718D5"></Setter>
+       </Style>
+      
+       <Style Selector="Button.func_cadastro:pointerover /template/ ContentPresenter">
+           <Setter Property="Background" Value="Transparent"></Setter>
+           <Setter Property="BorderBrush" Value="#B3B3B3"></Setter>
+           <Setter Property="Foreground" Value="#B3B3B3"></Setter>
+       </Style>
+      
+      
+   </Styles>
+  
+  
+  
+  
+</Styles>

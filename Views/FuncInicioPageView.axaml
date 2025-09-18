@@ -1,0 +1,121 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+            xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+            xmlns:viewModels="clr-namespace:Premix.ViewModels"
+            mc:Ignorable="d" d:DesignWidth="1100" d:DesignHeight="900"
+            Foreground="White"
+            x:DataType="viewModels:FuncInicioPageViewModel"
+            x:Class="Premix.Views.FuncInicioPageView">
+  
+   <Design.DataContext><viewModels:FuncInicioPageViewModel></viewModels:FuncInicioPageViewModel></Design.DataContext>
+  
+    <UserControl.Styles>
+        <StyleInclude Source="avares://Premix/Styles/FuncPremixStyles.axaml"/>
+    </UserControl.Styles>
+    
+  <Grid Background="#000000" ColumnDefinitions="*,Auto, Auto">
+       <!-- Conteúdo principal central -->
+       <StackPanel Margin="0 0 0 0" HorizontalAlignment="Left" VerticalAlignment="Top">
+           <!-- Área de boas-vindas -->
+           <TextBlock FontSize="28" Foreground="White" Text="Olá [nome]!" Margin="60 40 0 0 "/>
+           <TextBlock FontSize="20" Foreground="White" Margin="60 0 0 40"
+                      x:Name="txt_area"
+                      />
+
+
+           <!-- Métricas (3 cartões lado a lado) -->
+           <Grid Margin="60 55 0 0" ColumnDefinitions="225,225,225" HorizontalAlignment="Left">
+               <Border Grid.Column="0" BorderBrush="#3B1D65" BorderThickness="2" CornerRadius="13" Width="210" Height="110">
+                   <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Spacing="4">
+                       <Image Source="{SvgImage /Assets/Icons/func_user.svg}" Width="32"/>
+                       <TextBlock Foreground="#D4D4DD" FontSize="17" Margin="0 5 0 0">Tarefas Ativas</TextBlock>
+                       <TextBlock Foreground="White" FontSize="30" FontWeight="Bold" TextAlignment="Center">11</TextBlock>
+                   </StackPanel>
+               </Border>
+               <Border Grid.Column="1" BorderBrush="#3B1D65" BorderThickness="2" CornerRadius="13" Width="210" Height="110" Margin="15 0 0 0">
+                   <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Spacing="4">
+                       <Image Source="{SvgImage /Assets/Icons/func_entregas.svg}" Width="32"/>
+                       <TextBlock Foreground="#D4D4DD" FontSize="17" Margin="0 5 0 0">Entregas</TextBlock>
+                       <TextBlock Foreground="White" FontSize="30" FontWeight="Bold" TextAlignment="Center">22</TextBlock>
+                   </StackPanel>
+               </Border>
+               <Border Grid.Column="2" BorderBrush="#3B1D65" BorderThickness="2" CornerRadius="13" Width="210" Height="110" Margin="15 0 0 0">
+                   <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Spacing="4">
+                       <Image Source="{SvgImage /Assets/Icons/func_meta.svg}" Width="32"/>
+                       <TextBlock Foreground="#D4D4DD" FontSize="17" Margin="0 5 0 0">Metas Ativas</TextBlock>
+                       <TextBlock Foreground="White" FontSize="30" FontWeight="Bold" TextAlignment="Center">17</TextBlock>
+                   </StackPanel>
+               </Border>
+           </Grid>
+
+
+           <!-- Botões de acesso (3 cartões lado a lado abaixo das métricas) -->
+           <Grid Margin="60 20 0 0" ColumnDefinitions="225,225,225" HorizontalAlignment="Left">
+               <Button Grid.Column="0" Width="210" Height="100" BorderBrush="#3B1D65" BorderThickness="2" CornerRadius="13" Foreground="White" Background="Transparent" Margin="9 0 0 0 ">
+                   <TextBlock FontSize="20" Text="+&#10;Ver e Entregar&#10;Tarefas" TextAlignment="Center" />
+               </Button>
+               <Button Grid.Column="1" Width="210" Height="100" BorderBrush="#3B1D65" BorderThickness="2" CornerRadius="13" Foreground="White" Background="Transparent" Margin="15 0 0 0">
+                   <TextBlock FontSize="20" Text="+&#10;Desempenho" TextAlignment="Center" />
+               </Button>
+               <Button Grid.Column="2" Width="210" Height="100" BorderBrush="#3B1D65" BorderThickness="2" CornerRadius="13" Foreground="White" Background="Transparent" Margin="15 0 0 0">
+                   <TextBlock FontSize="20" Text="+&#10;Área de&#10;Preparação" TextAlignment="Center" />
+               </Button>
+           </Grid>
+       </StackPanel>
+
+
+       <!-- Lado direito: Linha do tempo -->
+       <Border Grid.Column="1" Background="#16161E">
+           <StackPanel Margin="20 25 10 0">
+               <!-- Departamento e subtítulo -->
+               <StackPanel Orientation="Horizontal">
+                   <ComboBox Width="200" Height="40" SelectedIndex="0" Background="#16161E" Foreground="White" BorderBrush="#3B1D65" >
+                       <ComboBoxItem>Departamento</ComboBoxItem>
+                   </ComboBox>
+               </StackPanel>
+               <TextBlock Foreground="White" FontWeight="Bold" FontSize="16" Margin="0 16 0 0">Tecnologia da Informação</TextBlock>
+
+
+               <!-- Linha do tempo titulo e filtros -->
+               <TextBlock Foreground="White" FontWeight="Bold" FontSize="20" Margin="0 28 0 10">Linha do Tempo</TextBlock>
+               <Button Margin="0 0 0 7" Background="#16161E" BorderThickness="1" BorderBrush="#3B1D65" Foreground="White" HorizontalAlignment="Left" Width="180" Height="40" Content="Status"/>
+               <Button Margin="0 0 0 14" Background="#16161E" BorderThickness="1" BorderBrush="#3B1D65" Foreground="White" HorizontalAlignment="Left" Width="180" Height="40" Content="Prioridade"/>
+
+
+               <!-- Itens da Linha do tempo -->
+               <StackPanel Margin="0 15 25 0">
+                   <Border BorderBrush="#6718D5" BorderThickness="2" CornerRadius="13" Margin="0 0 0 11">
+                       <StackPanel Margin="14 8">
+                           <TextBlock Foreground="White" FontWeight="Bold">Quinta-feira, 29 de maio de 2025</TextBlock>
+                           <StackPanel Orientation="Horizontal" Spacing="8" Margin="0 6 0 0">
+                               <TextBlock Foreground="#6718D5" FontSize="19">21:30</TextBlock>
+                               <TextBlock Foreground="White" VerticalAlignment="Center">Lorem ipsum dolor sit amet</TextBlock>
+                           </StackPanel>
+                       </StackPanel>
+                   </Border>
+                   <Border BorderBrush="#6718D5" BorderThickness="2" CornerRadius="13" Margin="0 0 0 11">
+                       <StackPanel Margin="14 8">
+                           <TextBlock Foreground="White" FontWeight="Bold">Segunda-feira, 02 de junho de 2025</TextBlock>
+                           <StackPanel Orientation="Horizontal" Spacing="8" Margin="0 6 0 0">
+                               <TextBlock Foreground="#6718D5" FontSize="19">23:59</TextBlock>
+                               <TextBlock Foreground="White" VerticalAlignment="Center">Lorem ipsum dolor sit amet</TextBlock>
+                           </StackPanel>
+                       </StackPanel>
+                   </Border>
+                   <Border BorderBrush="#6718D5" BorderThickness="2" CornerRadius="13">
+                       <StackPanel Margin="14 8">
+                           <TextBlock Foreground="White" FontWeight="Bold">Sábado, 07 de junho de 2025</TextBlock>
+                           <StackPanel Orientation="Horizontal" Spacing="8" Margin="0 6 0 0">
+                               <TextBlock Foreground="#6718D5" FontSize="19">12:00</TextBlock>
+                               <TextBlock Foreground="White" VerticalAlignment="Center">Lorem ipsum dolor sit amet</TextBlock>
+                           </StackPanel>
+                       </StackPanel>
+                   </Border>
+               </StackPanel>
+           </StackPanel>
+       </Border>
+  </Grid>
+</UserControl>
+
+

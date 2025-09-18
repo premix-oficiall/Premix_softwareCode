@@ -1,0 +1,161 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+            xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+            xmlns:viewModels="clr-namespace:Premix.ViewModels"
+            mc:Ignorable="d" d:DesignWidth="1024" d:DesignHeight="600"
+            x:DataType="viewModels:FuncDesempenhoPageViewModel"
+            x:Class="Premix.Views.FuncPreparacaoPageView">
+    
+    <UserControl.Styles>
+        <StyleInclude Source="avares://Premix/Styles/FuncPremixStyles.axaml"/>
+    </UserControl.Styles>
+          
+    <Design.DataContext><viewModels:FuncPreparacaoPageViewModel></viewModels:FuncPreparacaoPageViewModel></Design.DataContext>
+  
+
+
+            <ScrollViewer Background="Black">
+       <StackPanel Margin="50" Spacing="20">
+
+
+           <!-- Título -->
+           <TextBlock Text="Área de Preparação"
+                      Foreground="White"
+                      FontSize="20"
+                      FontWeight="Bold"
+                      />
+
+
+           <!-- Cursos -->
+           <StackPanel Spacing="10">
+               <TextBlock Text="Cursos"
+                          Foreground="White"
+                          FontSize="16"
+                          FontWeight="Bold"/>
+               <Border Height="1" Background="#404040"/>
+
+
+               <StackPanel Orientation="Horizontal" Spacing="15">
+
+
+                   <!-- Card Curso 1 -->
+                   <Border CornerRadius="10" BorderBrush="#3B1D65" BorderThickness="1"
+                           Background="#1A1A1A" Width="180" Height="120" Padding="10">
+                       <StackPanel VerticalAlignment="Center" Spacing="10">
+                           <TextBlock Text="[nome]" Foreground="White" FontWeight="Bold"/>
+                           <TextBlock Text="Status: Não iniciado" Foreground="White" FontSize="12"/>
+                           <Button Content="Acessar"
+                                   HorizontalAlignment="Stretch"
+                                   Background="#3B1D65"
+                                   Foreground="White"
+                                   FontWeight="Bold"
+                                   CornerRadius="8"/>
+                       </StackPanel>
+                   </Border>
+
+
+                   <!-- Card Curso 2 -->
+                   <Border CornerRadius="10" BorderBrush="#3B1D65" BorderThickness="1"
+                           Background="#1A1A1A" Width="180" Height="120" Padding="10">
+                       <StackPanel VerticalAlignment="Center" Spacing="10">
+                           <TextBlock Text="[nome]" Foreground="White" FontWeight="Bold"/>
+                           <TextBlock Text="Status: Não iniciado" Foreground="White" FontSize="12"/>
+                           <Button Content="Acessar"
+                                   HorizontalAlignment="Stretch"
+                                   Background="#3B1D65"
+                                   Foreground="White"
+                                   FontWeight="Bold"
+                                   CornerRadius="8"/>
+                       </StackPanel>
+                   </Border>
+
+
+                   <!-- Card Curso 3 -->
+                   <Border CornerRadius="10" BorderBrush="#3B1D65" BorderThickness="1"
+                           Background="#1A1A1A" Width="180" Height="120" Padding="10">
+                       <StackPanel VerticalAlignment="Center" Spacing="10">
+                           <TextBlock Text="[nome]" Foreground="White" FontWeight="Bold"/>
+                           <TextBlock Text="Status: Não iniciado" Foreground="White" FontSize="12"/>
+                           <Button Content="Acessar"
+                                   HorizontalAlignment="Stretch"
+                                   Background="#3B1D65"
+                                   Foreground="White"
+                                   FontWeight="Bold"
+                                   CornerRadius="8"/>
+                       </StackPanel>
+                   </Border>
+
+
+               </StackPanel>
+           </StackPanel>
+
+
+           <!-- Testes de Aptidão -->
+           <StackPanel Spacing="10">
+               <TextBlock Text="Testes de Aptidão"
+                          Foreground="White"
+                          FontSize="16"
+                          FontWeight="Bold"/>
+               <Border Height="1" Background="#404040"/>
+
+
+               <StackPanel Orientation="Horizontal" Spacing="15">
+
+
+                   <!-- Card Teste 1 -->
+                   <Border CornerRadius="10" BorderBrush="#3B1D65" BorderThickness="1"
+                           Background="#1A1A1A" Width="180" Height="120" Padding="10">
+                       <StackPanel VerticalAlignment="Center" Spacing="10">
+                           <TextBlock Text="[nome]" Foreground="White" FontWeight="Bold"/>
+                           <TextBlock Text="Status: Não iniciado" Foreground="White" FontSize="12"/>
+                           <Button Content="Acessar"
+                                   HorizontalAlignment="Stretch"
+                                   Background="#3B1D65"
+                                   Foreground="White"
+                                   FontWeight="Bold"
+                                   CornerRadius="8"/>
+                       </StackPanel>
+                   </Border>
+
+
+                   <!-- Card Teste 2 -->
+                   <Border CornerRadius="10" BorderBrush="#3B1D65" BorderThickness="1"
+                           Background="#1A1A1A" Width="180" Height="120" Padding="10">
+                       <StackPanel VerticalAlignment="Center" Spacing="10">
+                           <TextBlock Text="[nome]" Foreground="White" FontWeight="Bold"/>
+                           <TextBlock Text="Status: Não iniciado" Foreground="White" FontSize="12"/>
+                           <Button Content="Acessar"
+                                   HorizontalAlignment="Stretch"
+                                   Background="#3B1D65"
+                                   Foreground="White"
+                                   FontWeight="Bold"
+                                   CornerRadius="8"/>
+                       </StackPanel>
+                   </Border>
+
+
+                   <!-- Card Teste 3 -->
+                   <Border CornerRadius="10" BorderBrush="#3B1D65" BorderThickness="1"
+                           Background="#1A1A1A" Width="180" Height="120" Padding="10">
+                       <StackPanel VerticalAlignment="Center" Spacing="10">
+                           <TextBlock Text="[nome]" Foreground="White" FontWeight="Bold"/>
+                           <TextBlock Text="Status: Não iniciado" Foreground="White" FontSize="12"/>
+                           <Button Content="Acessar"
+                                   HorizontalAlignment="Stretch"
+                                   Background="#3B1D65"
+                                   Foreground="White"
+                                   FontWeight="Bold"
+                                   CornerRadius="8"/>
+                       </StackPanel>
+                   </Border>
+
+
+               </StackPanel>
+           </StackPanel>
+
+
+       </StackPanel>
+   </ScrollViewer>
+</UserControl>
+

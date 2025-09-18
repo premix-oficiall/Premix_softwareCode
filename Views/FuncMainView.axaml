@@ -1,0 +1,75 @@
+<Window xmlns="https://github.com/avaloniaui"
+       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+       mc:Ignorable="d" d:DesignWidth="1024" d:DesignHeight="600"
+       Width="1024" Height="600"
+       x:Class="Premix.FuncMainView"
+       xmlns:vm="clr-namespace:Premix.ViewModels"
+       xmlns:view="clr-namespace:Premix.Views"
+       x:DataType="vm:FuncMainViewModel"
+       Title="Premix">
+        
+        <Window.Styles>
+                <StyleInclude Source="avares://Premix/Styles/FuncPremixStyles.axaml"/>
+        </Window.Styles>
+      
+        <Design.DataContext><vm:FuncMainViewModel></vm:FuncMainViewModel></Design.DataContext>
+      
+
+   
+       <Grid Background="black" ColumnDefinitions="Auto, *">
+              
+               <ContentControl Grid.Column="1" Content="{Binding CurrentPage}"/>
+              
+               <Border Padding="20" Background="#1F1F1F" Width="{Binding SomeWidth}">
+                       <Grid RowDefinitions="*, Auto">
+                               <StackPanel Spacing="17">
+                                       <Image PointerPressed="InputElement_OnPointerPressed" Source="{SvgImage /Assets/Images/func_premix_roxa.svg}" Width="150" IsVisible="{Binding SideMenuExpanded}"></Image>
+                                       <Image PointerPressed="InputElement_OnPointerPressed" Source="{SvgImage /Assets/Images/func_icon.svg}" Width="22" IsVisible="{Binding !SideMenuExpanded}"></Image>
+                                      
+                                       <Button HorizontalAlignment="Stretch" Classes.active="{Binding FuncInicioPageIsActive}" Command="{Binding GoToFuncInicioCommand}" Margin="0 90 0 0">
+                                               <StackPanel Orientation="Horizontal">
+                                                       <Image Classes="icon" Source="{SvgImage /Assets/Icons/func_home.svg}" Width="22"></Image>
+                                                       <Label Classes="font" Content="Home" IsVisible="{Binding SideMenuExpanded}"></Label>
+                                               </StackPanel>
+                                       </Button>
+                                      
+                                       <Button HorizontalAlignment="Stretch" Classes.active="{Binding FuncEntregasPageIsActive}" Command="{Binding GoToFuncEntregasCommand}">
+                                               <StackPanel Orientation="Horizontal">
+                                                       <Image Classes="icon" Source="{SvgImage /Assets/Icons/func_metas_ativas.svg}" Width="22"></Image>
+                                                       <Label Classes="font" Content="Entregas" IsVisible="{Binding SideMenuExpanded}"></Label>
+                                               </StackPanel>
+                                       </Button>
+                                       <Button HorizontalAlignment="Stretch" Classes.active="{Binding FuncDesempenhoPageIsActive}" Command="{Binding GoToFuncDesempenhoCommand}">
+                                               <StackPanel Orientation="Horizontal">
+                                                       <Image Classes="icon" Source="{SvgImage /Assets/Icons/func_desempenho.svg}" Width="22"></Image>
+                                                       <Label Classes="font" Content="Desempenho" IsVisible="{Binding SideMenuExpanded}"></Label>
+                                               </StackPanel>
+                                       </Button>
+                                       <Button HorizontalAlignment="Stretch" Classes.active="{Binding FuncPreparacaoPageIsActive}" Command="{Binding GoToFuncPreparacaoCommand}">
+                                               <StackPanel Orientation="Horizontal">
+                                                       <Image Classes="icon" Source="{SvgImage /Assets/Icons/func_preparacao.svg}" Width="22"></Image>
+                                                       <Label Classes="font" Content="Preparação" IsVisible="{Binding SideMenuExpanded}"></Label>
+                                               </StackPanel>
+                                       </Button>
+                                       <Button HorizontalAlignment="Stretch" Margin="0 140 0 0" Classes.active="{Binding FuncConfiguracaoPageIsActive}" Command="{Binding GoToFuncConfiguracaoCommand}">
+                                               <StackPanel Orientation="Horizontal">
+                                                       <Image Classes="icon" Source="{SvgImage /Assets/Icons/func_configuracao.svg}" Width="22" ></Image>
+                                                       <Label Classes="font" Content="Configuração" IsVisible="{Binding SideMenuExpanded}"></Label>
+                                               </StackPanel>
+                                       </Button>
+                                       <Button HorizontalAlignment="Stretch" Click="BtnSair_Click">
+                                               <StackPanel Orientation="Horizontal" >
+                                                       <Image Classes="icon" Source="{SvgImage /Assets/Icons/func_perfil.svg}" Width="22"></Image>
+                                                       <Label Classes="font" Content="Logout" IsVisible="{Binding SideMenuExpanded}"></Label>
+                                               </StackPanel>
+                                       </Button>
+                               </StackPanel>
+                       </Grid>
+               </Border>
+       </Grid>
+      
+  
+</Window>
+

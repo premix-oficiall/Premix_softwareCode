@@ -1,0 +1,122 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+            xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+            mc:Ignorable="d" d:DesignWidth="1024" d:DesignHeight="600"
+            xmlns:vm="clr-namespace:Premix.ViewModels"
+            xmlns:views="clr-namespace:Premix.Views"
+            x:DataType="vm:FuncDesempenhoPageViewModel"
+            Foreground="White"
+            Background="Black"
+            x:Class="Premix.Views.FuncDesempenhoPageView">
+   <Design.DataContext><vm:FuncDesempenhoPageViewModel></vm:FuncDesempenhoPageViewModel></Design.DataContext>
+    
+    <UserControl.Styles>
+        <StyleInclude Source="avares://Premix/Styles/FuncPremixStyles.axaml"/>
+    </UserControl.Styles>
+    
+  
+      <Grid RowDefinitions="Auto,Auto,Auto,Auto" Margin="20" Background="Black">
+       <!-- Título -->
+       <TextBlock Text="Seu Desempenho"
+                  Foreground="White"
+                  FontSize="24"
+                  FontWeight="Bold"
+                  HorizontalAlignment="Center"
+                  Margin="0,10"/>
+
+
+       <!-- Ícone e Nome -->
+       <StackPanel Grid.Row="1" HorizontalAlignment="Center" Margin="0,20">
+           <Border Width="100" Height="100" CornerRadius="50"
+                   BorderBrush="White" BorderThickness="2"
+                   HorizontalAlignment="Center" VerticalAlignment="Center">
+               <TextBlock Text="👤" FontSize="60" Foreground="Gray"
+                          HorizontalAlignment="Center"
+                          VerticalAlignment="Center"/>
+           </Border>
+           <TextBlock Text="[Nome Funcionário]"
+                      Foreground="White"
+                      FontSize="18"
+                      HorizontalAlignment="Center"
+                      Margin="0,10"/>
+       </StackPanel>
+
+
+       <!-- Barra de Filtros -->
+       <Border Grid.Row="2" CornerRadius="8" BorderBrush="#3B1D65" BorderThickness="1" Padding="10" Margin="0,20" HorizontalAlignment="Center">
+           <StackPanel Orientation="Horizontal" Spacing="10" VerticalAlignment="Center">
+               <TextBlock Text="Filtros:" Foreground="White" VerticalAlignment="Center"/>
+              
+               <TextBox Width="200" Watermark="Pesquisar Metas"/>
+               <Button Content="🔍" Width="35" Height="30"/>
+
+
+               <ComboBox Width="150" Height="30">
+                   <ComboBoxItem Content="Todas"/>
+                   <ComboBoxItem Content="Pendentes"/>
+                   <ComboBoxItem Content="Concluídas"/>
+               </ComboBox>
+
+
+               <Button Content="Minhas Metas" Foreground="White"
+                       BorderBrush="#3B1D65" BorderThickness="1"
+                       Background="Transparent"
+                       Padding="10,5"/>
+           </StackPanel>
+       </Border>
+
+
+       <!-- Lista de Metas -->
+       <StackPanel Grid.Row="3" Spacing="10">
+           <!-- Meta 1 -->
+           <Border BorderBrush="#3B1D65" BorderThickness="1" CornerRadius="5" Padding="10">
+               <Grid ColumnDefinitions="*,Auto,*" >
+                   <TextBlock Text="[Nome Meta]" Foreground="White" FontWeight="Bold" VerticalAlignment="Center"/>
+
+
+                   <TextBlock Grid.Column="1"
+                              Text="Prazo: 25 de Julho de 2025"
+                              Foreground="White"
+                              Margin="20,0"
+                              VerticalAlignment="Center"/>
+
+
+                   <TextBlock Grid.Column="2"
+                              Text="Recompensa: Nenhuma"
+                              Foreground="White"
+                              FontWeight="Bold"
+                              VerticalAlignment="Center"/>
+               </Grid>
+           </Border>
+
+
+           <!-- Meta 2 -->
+           <Border BorderBrush="#3B1D65" BorderThickness="1" CornerRadius="5" Padding="10">
+               <Grid ColumnDefinitions="*,Auto,*" >
+                   <TextBlock Text="[Nome Meta]" Foreground="White" FontWeight="Bold" VerticalAlignment="Center"/>
+
+
+                   <TextBlock Grid.Column="1"
+                              Text="Prazo: 19 de Junho de 2025"
+                              Foreground="White"
+                              Margin="20,0"
+                              VerticalAlignment="Center"/>
+
+
+                   <TextBlock Grid.Column="2"
+                              Text="Recompensa: [Recompensa Nome]"
+                              Foreground="White"
+                              FontWeight="Bold"
+                              VerticalAlignment="Center"/>
+               </Grid>
+           </Border>
+       </StackPanel>
+      
+      
+   </Grid>
+
+
+      
+</UserControl>
+

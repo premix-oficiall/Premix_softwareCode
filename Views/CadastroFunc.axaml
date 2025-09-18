@@ -1,0 +1,109 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+            xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+            mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+            x:Class="Premix.Views.CadastroFunc">
+    
+    <UserControl.Styles>
+        <StyleInclude Source="avares://Premix/Styles/LoginStyles.axaml"/>
+    </UserControl.Styles>
+    <Border Background="Transparent" CornerRadius="12" HorizontalAlignment="Center" VerticalAlignment="Center" Width="800" Height="450" >
+              
+               <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                   
+                    <!-- Lado Esquerdo (Ja tem conta?) -->
+                    <Border Grid.Column="0" Background="#3B1D65" CornerRadius="12,0,0,12" >
+                        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                      
+                            <TextBlock Text="Já tem Conta?" FontSize="40" Foreground="#B3B3B3" Margin="0,0,0,10" TextAlignment="Center"/>
+                       
+                            <TextBlock Text="Para administrar a sua empresa faça login com suas informações" FontSize="14" Foreground="#B3B3B3" TextAlignment="Center" Width="250" TextWrapping="Wrap" />
+                       
+                            <!--Botão Entrar-->
+                       
+                            <Button Classes="func_cadastro" Content="ENTRAR" Width="150" Height="35" Background="Transparent" Foreground="#B3B3B3" HorizontalAlignment="Center" BorderBrush="#B3B3B3" BorderThickness="2" FontWeight="Bold" Margin="0,20,0,0" CornerRadius="20" HorizontalContentAlignment="Center"
+                                    Click="Comeback"
+                                    />
+                        </StackPanel>
+                    </Border>
+                   
+                    <!-- Lado Direito (Criar conta) -->
+          
+            <Border Grid.Column="1" Background="#0B0B0B" CornerRadius="0,12,12,0">
+                 <StackPanel Margin="40" VerticalAlignment="Center">
+                     
+                      <!-- Título -->
+                     
+                      <TextBlock Text="Criar Conta:" Foreground="#B3B3B3" FontSize="26" Margin="0,0,0,20" TextAlignment="Center" />
+                    
+                      <!-- Botões Gestor/Funcionário -->
+                     
+                      <Border CornerRadius="15" Height="30" Width="200" Margin="0,0,0,20">
+                            <Grid>
+                                 <Grid.ColumnDefinitions>
+                                  <ColumnDefinition Width="*" />
+                                  <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                                
+                                 <!-- Gestor -->
+                                
+                                 <Button Grid.Column="0" Background="black" Foreground="#B3B3B3" BorderBrush="#B3B3B3" BorderThickness="1" Content="Gestor" HorizontalContentAlignment="Center" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" CornerRadius="22,0,0,22" Classes="func_gestor"
+                                         
+                                         />
+                                
+                                 <!-- Funcionário -->
+                                 <Button Grid.Column="1" Background="#3B1D65" Foreground="#B3B3B3" BorderBrush="#B3B3B3" BorderThickness="1" Content="Funcionário" HorizontalContentAlignment="Center" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" CornerRadius="0,22,22,0" Classes="func_func" />
+                                
+                            </Grid>
+                      </Border>
+                     
+                      <!-- Campo Usuário -->
+                     
+                      <TextBox x:Name="txt_usuario" Height="40" Margin="0,0,0,10" Padding="10" Foreground="Black" FontSize="14" Background="White" BorderThickness="0" Watermark="Usuário" />
+                     
+                      <!-- Campo Cpf -->
+                     
+                      <TextBox x:Name="txt_cpf" Height="40" Margin="0,0,0,10" Padding="10" Foreground="Black" FontSize="14" Background="White" BorderThickness="0" MaxLength="11" Watermark="CPF"/>
+                     
+                      <!-- Campo Senha -->
+                     
+                      <TextBox x:Name="txt_senha" Height="40" Margin="0,0,0,10" Padding="10" Foreground="Black" FontSize="14" Background="White" BorderThickness="0" PasswordChar="*" Watermark="Senha"/>
+                     
+                      <!-- Campo Confirmar Senha -->
+                     
+                      <TextBox Height="40" Margin="0,0,0,10" Padding="10" Foreground="Black" FontSize="14" Background="White" BorderThickness="0" PasswordChar="*" Watermark="Confirmar Senha"/>
+                     
+                      <!-- Botão Cadastrar -->
+                     
+                      <Button Classes="func_logar" Content="CADASTRAR" Width="170" Height="35" Background="Transparent" Foreground="#6718D5" BorderBrush="#6718D5" BorderThickness="2" FontWeight="Bold" HorizontalAlignment="Center" CornerRadius="20" HorizontalContentAlignment="Center" Margin="0 20 0 0" 
+                              Click="OnCadastroClick"/>
+                     
+                      <!-- Logo -->
+                     
+                 </StackPanel>
+            </Border>
+                   
+                    <!--TRANSIÇÃO FUNCIONARIO LOGIN-->
+                    <TransitioningContentControl x:Name="MainContent"
+                                                 Grid.Column="0" Grid.ColumnSpan="2">
+                        <TransitioningContentControl.PageTransition>
+                            <CrossFade Duration="0:0:0.5"/>
+                        </TransitioningContentControl.PageTransition>
+                    </TransitioningContentControl>
+                   
+                   
+                   
+                   
+                   
+                </Grid>
+              
+              
+              
+           </Border>
+</UserControl>
+

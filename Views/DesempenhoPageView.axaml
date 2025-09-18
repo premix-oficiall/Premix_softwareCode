@@ -1,0 +1,115 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="1100" d:DesignHeight="900"
+             xmlns:vm="clr-namespace:Premix.ViewModels"
+             xmlns:lvc="using:LiveChartsCore.SkiaSharpView.Avalonia"
+             Background="Black"
+             Foreground="White"
+             x:DataType="vm:DesempenhoPageViewModel"
+             x:Class="Premix.Views.DesempenhoPageView">
+    
+    <Design.DataContext><vm:DesempenhoPageViewModel></vm:DesempenhoPageViewModel></Design.DataContext>
+    
+    <UserControl.Styles>
+        <StyleInclude Source="avares://Premix/Styles/PremixStyles.axaml"/>
+    </UserControl.Styles>
+    
+     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="5" />
+            <ColumnDefinition Width="2*" />
+        </Grid.ColumnDefinitions>
+
+        <!-- Painel esquerdo -->
+        <StackPanel Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" Spacing="20">
+
+            <TextBlock Text="Análise de Desempenho"
+                       FontSize="28"
+                       FontWeight="Bold"
+                       HorizontalAlignment="Center"/>
+
+            <!-- Filtros -->
+            <ComboBox Width="250" Height="45" 
+                      BorderBrush="#FBCA48" BorderThickness="2"
+                      Background="Transparent" Foreground="White"
+                      CornerRadius="10"
+                      HorizontalContentAlignment="Center"/>
+            
+            <ComboBox Width="250" Height="45" 
+                      BorderBrush="#FBCA48" BorderThickness="2"
+                      Background="Transparent" Foreground="White"
+                      CornerRadius="10"
+                      HorizontalContentAlignment="Center"/>
+
+            <ComboBox Width="250" Height="45" 
+                      BorderBrush="#FBCA48" BorderThickness="2"
+                      Background="Transparent" Foreground="White"
+                      CornerRadius="10"
+                      HorizontalContentAlignment="Center"/>
+
+            <!-- Calendário corrigido -->
+            <Calendar Width="250" Height="250"
+                      DisplayMode="Month"
+                      Background="Black"
+                      Foreground="White"
+                      BorderBrush="#FBCA48"
+                      BorderThickness="1"/>
+
+            <!-- Time Picker -->
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Spacing="8">
+                <TextBlock Text="Time" VerticalAlignment="Center" FontSize="16"/>
+                <TextBox Width="60" Height="30" Text="11:38"
+                         Background="Black" Foreground="White"
+                         BorderBrush="#FBCA48" BorderThickness="1"/>
+                <ComboBox Width="60" Height="30"
+                          Background="Black" Foreground="White"
+                          BorderBrush="#FBCA48">
+                    <ComboBoxItem Content="AM"/>
+                    <ComboBoxItem Content="PM"/>
+                </ComboBox>
+            </StackPanel>
+        </StackPanel>
+
+        <!-- Divisor -->
+        <GridSplitter Grid.Column="1" HorizontalAlignment="Stretch"
+                      VerticalAlignment="Stretch" Width="2"
+                      Background="Gray"/>
+
+        <!-- Painel direito -->
+        <StackPanel Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center" Spacing="20" Margin="20 0">
+
+            <!-- Gráficos circulares (donuts) -->
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Spacing="30">
+                <lvc:PieChart Series="{Binding DonutSeries}"  LegendPosition="Hidden"
+                              Width="150" Height="150"/>
+                <lvc:PieChart Series="{Binding DonutSeries2}"  LegendPosition="Hidden"
+                              Width="150" Height="150"/>
+            </StackPanel>
+
+            <!-- Gráficos de área e barras -->
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Spacing="20">
+                <lvc:CartesianChart Series="{Binding AreaSeries}"
+                                    XAxes="{Binding XAxes}"
+                                    YAxes="{Binding YAxes}"
+                                    Width="250" Height="150"/>
+                
+                <lvc:CartesianChart Series="{Binding ColumnSeries}"
+                                    XAxes="{Binding XAxes}"
+                                    YAxes="{Binding YAxes}"
+                                    Width="150" Height="150"/>
+            </StackPanel>
+
+            <!-- Texto -->
+            <TextBlock HorizontalAlignment="Center" FontSize="16" TextWrapping="Wrap" Width="450">
+                <Run Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " Foreground="White"/>
+                <Run Text="Ut enim ad minim veniam," Foreground="#FBCA48" FontWeight="Bold"/>
+                <Run Text=" quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. " Foreground="White"/>
+                <Run Text="Duis aute irure dolor" Foreground="#FBCA48" FontWeight="Bold"/>
+                <Run Text=" in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur." Foreground="White"/>
+            </TextBlock>
+        </StackPanel>
+    </Grid>
+</UserControl>

@@ -1,0 +1,79 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="1100" d:DesignHeight="900"
+             Background="Black"
+             Foreground="White"
+             x:Class="Premix.Views.EditarPageView">
+    
+    <UserControl.Styles>
+        <StyleInclude Source="avares://Premix/Styles/PremixStyles.axaml"/>
+    </UserControl.Styles>
+    
+    <Grid ColumnDefinitions="*,Auto,*" RowDefinitions="Auto,*" VerticalAlignment="Center">
+        
+        <!-- LEFT Content-->
+        <StackPanel Grid.Column="0" Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center" Spacing="20">
+            <!-- Buttons -->
+            <Button Width="170" Height="170" BorderBrush="#FBCA48" BorderThickness="2" Background="Transparent" Foreground="White" CornerRadius="15">
+                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Spacing="8">
+                    <TextBlock Text="Funcionários no departamento" FontSize="16" TextWrapping="Wrap" TextAlignment="Center"/>
+                    <TextBlock Text="10" FontSize="30" FontWeight="Bold" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </Button>
+            <Button Width="170" Height="170" BorderBrush="#FBCA48" BorderThickness="2" Background="Transparent" Foreground="White" CornerRadius="15">
+                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Spacing="8">
+                    <TextBlock Text="Departamentos Cadastrados" FontSize="16" TextWrapping="Wrap" TextAlignment="Center"/>
+                    <TextBlock Text="10" FontSize="30" FontWeight="Bold" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </Button>
+            
+        </StackPanel>
+        
+        <TextBlock Grid.Column="0" Grid.Row="1" Text="Departamentos" Foreground="White" FontWeight="Bold" FontSize="20" HorizontalAlignment="Center" Margin="0,20,0,10"/>
+        
+        <Border Grid.Column="0" Grid.Row="1" BorderBrush="#FBCA48" BorderThickness="2" CornerRadius="10" Padding="17" Width="340" Margin="0,60,0,0">
+            <StackPanel Spacing="12" HorizontalAlignment="Center">
+                <Border BorderBrush="#FBCA48" BorderThickness="2" CornerRadius="10" Padding="6" Width="262" Background="Black">
+                    <DockPanel>
+                        <TextBox Width="210" BorderThickness="0" Background="Black" Foreground="White"/>
+                        <TextBlock Text="🔍" Foreground="White" VerticalAlignment="Center" Margin="6,0,0,0"/>
+                    </DockPanel>
+                </Border>
+                
+                <!-- Lista -->
+                <Border BorderBrush="#FBCA48" BorderThickness="2" CornerRadius="10" Padding="10" Width="260" Background="Black">
+                    <StackPanel>
+                        <TextBlock Text="Tecnologia da Informação" Foreground="White" FontSize="16" Margin="0,4"/>
+                        <TextBlock Text="Comercial/Vendas" Foreground="White" FontSize="16" Margin="0,4"/>
+                        <TextBlock Text="Recursos Humanos" Foreground="White" FontSize="16" Margin="0,4"/>
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+        </Border>
+
+        <!-- Divider -->
+        <Border Grid.Column="1" Grid.Row="0" Grid.RowSpan="2" Background="Bisque" Width="2"/>
+
+        <!-- RIGHT: Texto Explicativo -->
+        <StackPanel Grid.Column="2" Grid.Row="0" Grid.RowSpan="2" Margin="100,0,110,0" VerticalAlignment="Center" Spacing="8">
+            <TextBlock FontSize="25" TextWrapping="Wrap">
+                <Run Text="Gerencie com "/><Run Text="facilidade" Foreground="#FFD54F"/>
+                <Run Text=" os departamentos da sua empresa."/>
+            </TextBlock>
+
+            <TextBlock FontSize="25" TextWrapping="Wrap">
+                <Run Text="Visualize " Foreground="#FFD54F"/>
+                <Run Text="os departamentos cadastrados, veja os funcionários vinculados a cada um e "/>
+                <Run Text="selecione o setor que deseja editar." Foreground="#FFC107"/>
+            </TextBlock>
+
+            <TextBlock FontSize="25" TextWrapping="Wrap">
+                <Run Text="É possível renomear, excluir departamentos ou reorganizar os colaboradores alocados, "/>
+                <Run Text="mantendo a estrutura sempre alinhada à realidade da equipe." Foreground="#FFC107"/>
+            </TextBlock>
+        </StackPanel>
+    </Grid>
+
+</UserControl>

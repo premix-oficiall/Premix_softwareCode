@@ -1,0 +1,101 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="Premix.Views.LoginFunc">
+    
+    <UserControl.Styles>
+        <StyleInclude Source="avares://Premix/Styles/LoginStyles.axaml"/>
+    </UserControl.Styles>
+    
+    <Border CornerRadius="12" HorizontalAlignment="Center" VerticalAlignment="Center" Width="800" Height="450" Background="Transparent">
+<Grid>
+       <Grid.ColumnDefinitions>
+           <ColumnDefinition Width="*"></ColumnDefinition>
+           <ColumnDefinition Width="*"></ColumnDefinition>
+       </Grid.ColumnDefinitions>
+     
+       <!-- Lado Esquerdo (Login) -->
+
+
+       <Border Grid.Column="0" Background="#0B0B0B" CornerRadius="12,0,0,12">
+           <StackPanel Margin="40" VerticalAlignment="Center">
+       
+              
+       
+         <TextBlock Text="Entrar como:" Foreground="#B3B3B3" FontSize="26" Margin="0,0,0,20" TextAlignment="Center" />
+      
+         <!-- Botões Gestor/Funcionário -->
+       
+         <Border CornerRadius="15" Height="30" Width="200" Margin="0,0,0,20">
+               <Grid>
+                    <Grid.ColumnDefinitions>
+                     <ColumnDefinition Width="*" />
+                     <ColumnDefinition Width="*" />
+               </Grid.ColumnDefinitions>
+                  
+                    <!-- Gestor -->
+                  
+                    <Button Grid.Column="0" Background="Black" Foreground="#B3B3B3" BorderBrush="#B3B3B3" BorderThickness="1" Content="Gestor" HorizontalContentAlignment="Center" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" CornerRadius="22,0,0,22" Classes="func_gestor"
+                            Click="Comeback"
+                            />
+                  
+                    <!-- Funcionário -->
+                    <Button Grid.Column="1" Background="#3B1D65" Foreground="#B3B3B3" BorderBrush="#B3B3B3" BorderThickness="1" Content="Funcionário" HorizontalContentAlignment="Center" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" CornerRadius="0,22,22,0" Classes="func_func"
+                            />
+                  
+               </Grid>
+         </Border>
+       
+         <!-- Campo Usuário -->
+       
+         <TextBox Height="40" Margin="0,0,0,10" Padding="10" Foreground="Black" FontSize="14" Background="White" BorderThickness="0" Watermark="Usuário" Name="txt_usuario"/>
+       
+         <!-- Campo Senha -->
+       
+         <TextBox Height="40" Margin="0,0,0,10" Padding="10" Foreground="Black" FontSize="14" Background="White" BorderThickness="0" PasswordChar="*" Watermark="Senha" Name="txt_senha"/>
+       
+         <!-- Esqueceu senha -->
+       
+         <TextBlock Foreground="#B3B3B3" FontSize="12" HorizontalAlignment="Center" Margin="0,0,0,10"> <Run Text="Esqueceu a senha? " /> <Run Text="Clique aqui." Foreground="#6718D5" /> </TextBlock>
+       
+         <!-- Botão Logar -->
+       
+         <Button Classes="func_logar" Content="LOGAR" Width="120" Height="35" Background="Transparent" Foreground="#6718D5" BorderBrush="#6718D5" BorderThickness="2" FontWeight="Bold" HorizontalAlignment="Center" CornerRadius="20" HorizontalContentAlignment="Center" Margin="0 20 0 0"
+                 Click="OnLoginClick"/>
+       
+         <!-- Logo -->
+       
+       
+    </StackPanel>
+</Border>
+     
+       <!-- Lado Direito (Login) -->
+       <Border Grid.Column="1" Background="#3B1D65" CornerRadius="0,12,12,0" >
+           <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+        
+               <TextBlock Text="Olá Funcionário!" FontSize="40" Foreground="#B3B3B3" Margin="0,0,0,10" TextAlignment="Center"/>
+         
+               <TextBlock Text="Cadastre-se e comece a produzir para sua empresa" FontSize="14" Foreground="#B3B3B3" TextAlignment="Center" Width="250" TextWrapping="Wrap" />
+         
+               <!--Botão Cadastrar-->
+         
+               <Button Classes="func_cadastro" Content="Cadastrar" Width="150" Height="35" Background="Transparent" Foreground="#B3B3B3" HorizontalAlignment="Center" BorderBrush="#B3B3B3" BorderThickness="2" FontWeight="Bold" Margin="0,20,0,0" CornerRadius="20" HorizontalContentAlignment="Center"
+                       Click="GoToCadastroFunc"
+                       />
+           </StackPanel>
+       </Border>
+     
+     
+       <TransitioningContentControl x:Name="MainContent"
+                                    Grid.Column="0" Grid.ColumnSpan="2">
+           <TransitioningContentControl.PageTransition>
+               <CrossFade Duration="0:0:0.5"/>
+           </TransitioningContentControl.PageTransition>
+       </TransitioningContentControl>
+     
+</Grid>
+</Border>
+
+</UserControl>

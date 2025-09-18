@@ -1,0 +1,77 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="clr-namespace:Premix.ViewModels"
+             mc:Ignorable="d" d:DesignWidth="1100" d:DesignHeight="900"
+             Background="Black"
+             Foreground="White"
+             x:DataType="vm:ConfiguracaoPageViewModel"
+             x:Class="Premix.Views.ConfiguracaoPageView">
+    
+    <Design.DataContext><vm:ConfiguracaoPageViewModel></vm:ConfiguracaoPageViewModel></Design.DataContext>
+    
+    <UserControl.Styles>
+        <StyleInclude Source="avares://Premix/Styles/PremixStyles.axaml"/>
+    </UserControl.Styles>
+    
+    <Border Padding="20">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/> <!-- Header -->
+                <RowDefinition Height="Auto"/> 
+            </Grid.RowDefinitions>
+            
+            <!-- Header -->
+            <StackPanel Grid.Row="0" Margin="0 0 0 30">
+                <TextBlock Margin="0 0 0 10" HorizontalAlignment="Left" Text="Configurações da Plataforma" FontWeight="Bold" FontSize="45"></TextBlock>
+                <TextBlock HorizontalAlignment="Left" Text="Personalize regras e permissões do seu sistema." FontSize="24"></TextBlock>
+            </StackPanel>
+            
+            <!-- Main Content -->
+            <StackPanel Grid.Row="1" Spacing="30">
+                <!-- Editar Permissões -->
+                <Button Width="370" Height="150" BorderBrush="#FBCA48" BorderThickness="2"
+                        Background="Transparent" Foreground="White" CornerRadius="15"
+                        HorizontalContentAlignment="Stretch" Padding="16">
+                    <Grid ColumnDefinitions="Auto,*" VerticalAlignment="Center">
+                        <Image Grid.Column="0" Classes="icon" Source="{SvgImage /Assets/IconsConfiguracao/chave.svg}" Width="55" Margin="0,0,12,0"/>
+                        <StackPanel Grid.Column="1" Orientation="Vertical">
+                            <TextBlock Text="Editar Permissões" FontSize="22" FontWeight="Bold"/>
+                            <TextBlock Text="Promover funcionário a supervisor ou limitar suas ações"
+                                       FontSize="14" TextWrapping="Wrap"/>
+                        </StackPanel>
+                    </Grid>
+                </Button>
+
+                <!-- Notificações -->
+                <Button Width="370" Height="150" BorderBrush="#FBCA48" BorderThickness="2"
+                        Background="Transparent" Foreground="White" CornerRadius="15"
+                        HorizontalContentAlignment="Stretch" Padding="16">
+                    <Grid ColumnDefinitions="Auto,*" VerticalAlignment="Center">
+                        <Image Grid.Column="0" Classes="icon" Source="{SvgImage /Assets/IconsConfiguracao/sino.svg}" Width="55" Margin="0,0,12,0"/>
+                        <StackPanel Grid.Column="1" Orientation="Vertical">
+                            <TextBlock Text="Notificações" FontSize="22" FontWeight="Bold"/>
+                            <TextBlock Text="Fique por dentro de todas as novidades e alertas da sua empresa"
+                                       FontSize="14" TextWrapping="Wrap"/>
+                        </StackPanel>
+                    </Grid>
+                </Button>
+
+                <!-- Editar Perfil -->
+                <Button Width="370" Height="150" BorderBrush="#FBCA48" BorderThickness="2"
+                        Background="Transparent" Foreground="White" CornerRadius="15"
+                        HorizontalContentAlignment="Stretch" Padding="16">
+                    <Grid ColumnDefinitions="Auto,*" VerticalAlignment="Center">
+                        <Image Grid.Column="0" Classes="icon" Source="{SvgImage /Assets/IconsConfiguracao/doubusers.svg}" Width="55" Margin="0,0,12,0"/>
+                        <StackPanel Grid.Column="1" Orientation="Vertical">
+                            <TextBlock Text="Editar Perfil" FontSize="22" FontWeight="Bold"/>
+                            <TextBlock Text="Altere suas informações pessoais e dados"
+                                       FontSize="14" TextWrapping="Wrap"/>
+                        </StackPanel>
+                    </Grid>
+                </Button>
+            </StackPanel>
+        </Grid>
+    </Border>
+</UserControl>

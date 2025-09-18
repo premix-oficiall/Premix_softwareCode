@@ -1,0 +1,487 @@
+C:\Users\evand\RiderProjects\Premix\bin\Debug\net9.0\Premix.exe
+C:\Users\evand\RiderProjects\Premix\bin\Debug\net9.0\Premix.deps.json
+C:\Users\evand\RiderProjects\Premix\bin\Debug\net9.0\Premix.runtimeconfig.json
+C:\Users\evand\RiderProjects\Premix\bin\Debug\net9.0\Premix.dll
+C:\Users\evand\RiderProjects\Premix\bin\Debug\net9.0\Premix.pdb
+C:\Users\evand\RiderProjects\Premix\bin\Debug\net9.0\Avalonia.Base.dll
+C:\Users\evand\RiderProjects\Premix\bin\Debug\net9.0\Avalonia.Controls.dll
+C:\Users\evand\RiderProjects\Premix\bin\Debug\net9.0\Avalonia.DesignerSupport.dll
+C:\Users\evand\RiderProjects\Premix\bin\Debug\net9.0\Avalonia.Dialogs.dll
+C:\Users\evand\RiderProjects\Premix\bin\Debug\net9.0\Avalonia.Markup.Xaml.dll
+C:\Users\evand\RiderProjects\Premix\bin\Debug\net9.0\Avalonia.Markup.dll
+C:\Users\evand\RiderProjects\Premix\bin\Debug\net9.0\Avalonia.Metal.dll
+C:\Users\evand\RiderProjects\Premix\bin\Debug\net9.0\Avalonia.MicroCom.dll
+C:\Users\evand\RiderProjects\Premix\bin\Debug\net9.0\Avalonia.OpenGL.dll
+C:\Users\evand\RiderProjects\Premix\bin\Debug\net9.0\Avalonia.Vulkan.dll
+C:\Users\evand\RiderProjects\Premix\bin\Debug\net9.0\Avalonia.dll
+C:\Users\evand\RiderProjects\Premix\bin\Debug\net9.0\Avalonia.Controls.ColorPicker.dll
+C:\Users\evand\RiderProjects\Premix\bin\Debug\net9.0\Avalonia.Desktop.dll
+C:\Users\evand\RiderProjects\Premix\bin\Debug\net9.0\Avalonia.Diagnostics.dll
+C:\Users\evand\RiderProjects\Premix\bin\Debug\net9.0\Avalonia.Fonts.Inter.dll
+C:\Users\evand\RiderProjects\Premix\bin\Debug\net9.0\Avalonia.FreeDesktop.dll
+C:\Users\evand\RiderProjects\Premix\bin\Debug\net9.0\Avalonia.Native.dll
+C:\Users\evand\RiderProjects\Premix\bin\Debug\net9.0\Avalonia.Remote.Protocol.dll
+C:\Users\evand\RiderProjects\Premix\bin\Debug\net9.0\Avalonia.Skia.dll
+C:\Users\evand\RiderProjects\Premix\bin\Debug\net9.0\Avalonia.Themes.Fluent.dll
+C:\Users\evand\RiderProjects\Premix\bin\Debug\net9.0\Avalonia.Themes.Simple.dll
+C:\Users\evand\RiderProjects\Premix\bin\Debug\net9.0\Avalonia.Win32.Automation.dll
+C:\Users\evand\RiderProjects\Premix\bin\Debug\net9.0\Avalonia.Win32.dll
+C:\Users\evand\RiderProjects\Premix\bin\Debug\net9.0\Avalonia.X11.dll
+C:\Users\evand\RiderProjects\Premix\bin\Debug\net9.0\HarfBuzzSharp.dll
+C:\Users\evand\RiderProjects\Premix\bin\Debug\net9.0\MicroCom.Runtime.dll
+C:\Users\evand\RiderProjects\Premix\bin\Debug\net9.0\SkiaSharp.dll
+C:\Users\evand\RiderProjects\Premix\bin\Debug\net9.0\Tmds.DBus.Protocol.dll
+C:\Users\evand\RiderProjects\Premix\bin\Debug\net9.0\runtimes\win-arm64\native\av_libglesv2.dll
+C:\Users\evand\RiderProjects\Premix\bin\Debug\net9.0\runtimes\win-x64\native\av_libglesv2.dll
+C:\Users\evand\RiderProjects\Premix\bin\Debug\net9.0\runtimes\win-x86\native\av_libglesv2.dll
+C:\Users\evand\RiderProjects\Premix\bin\Debug\net9.0\runtimes\osx\native\libAvaloniaNative.dylib
+C:\Users\evand\RiderProjects\Premix\bin\Debug\net9.0\runtimes\linux-arm\native\libHarfBuzzSharp.so
+C:\Users\evand\RiderProjects\Premix\bin\Debug\net9.0\runtimes\linux-arm64\native\libHarfBuzzSharp.so
+C:\Users\evand\RiderProjects\Premix\bin\Debug\net9.0\runtimes\linux-loongarch64\native\libHarfBuzzSharp.so
+C:\Users\evand\RiderProjects\Premix\bin\Debug\net9.0\runtimes\linux-musl-arm\native\libHarfBuzzSharp.so
+C:\Users\evand\RiderProjects\Premix\bin\Debug\net9.0\runtimes\linux-musl-arm64\native\libHarfBuzzSharp.so
+C:\Users\evand\RiderProjects\Premix\bin\Debug\net9.0\runtimes\linux-musl-loongarch64\native\libHarfBuzzSharp.so
+C:\Users\evand\RiderProjects\Premix\bin\Debug\net9.0\runtimes\linux-musl-riscv64\native\libHarfBuzzSharp.so
+C:\Users\evand\RiderProjects\Premix\bin\Debug\net9.0\runtimes\linux-musl-x64\native\libHarfBuzzSharp.so
+C:\Users\evand\RiderProjects\Premix\bin\Debug\net9.0\runtimes\linux-riscv64\native\libHarfBuzzSharp.so
+C:\Users\evand\RiderProjects\Premix\bin\Debug\net9.0\runtimes\linux-x64\native\libHarfBuzzSharp.so
+C:\Users\evand\RiderProjects\Premix\bin\Debug\net9.0\runtimes\linux-x86\native\libHarfBuzzSharp.so
+C:\Users\evand\RiderProjects\Premix\bin\Debug\net9.0\runtimes\osx\native\libHarfBuzzSharp.dylib
+C:\Users\evand\RiderProjects\Premix\bin\Debug\net9.0\runtimes\win-arm64\native\libHarfBuzzSharp.dll
+C:\Users\evand\RiderProjects\Premix\bin\Debug\net9.0\runtimes\win-x64\native\libHarfBuzzSharp.dll
+C:\Users\evand\RiderProjects\Premix\bin\Debug\net9.0\runtimes\win-x86\native\libHarfBuzzSharp.dll
+C:\Users\evand\RiderProjects\Premix\bin\Debug\net9.0\runtimes\linux-arm\native\libSkiaSharp.so
+C:\Users\evand\RiderProjects\Premix\bin\Debug\net9.0\runtimes\linux-arm64\native\libSkiaSharp.so
+C:\Users\evand\RiderProjects\Premix\bin\Debug\net9.0\runtimes\linux-musl-x64\native\libSkiaSharp.so
+C:\Users\evand\RiderProjects\Premix\bin\Debug\net9.0\runtimes\linux-x64\native\libSkiaSharp.so
+C:\Users\evand\RiderProjects\Premix\bin\Debug\net9.0\runtimes\osx\native\libSkiaSharp.dylib
+C:\Users\evand\RiderProjects\Premix\bin\Debug\net9.0\runtimes\win-arm64\native\libSkiaSharp.dll
+C:\Users\evand\RiderProjects\Premix\bin\Debug\net9.0\runtimes\win-x64\native\libSkiaSharp.dll
+C:\Users\evand\RiderProjects\Premix\bin\Debug\net9.0\runtimes\win-x86\native\libSkiaSharp.dll
+C:\Users\evand\RiderProjects\Premix\obj\Debug\net9.0\Premix.csproj.AssemblyReference.cache
+C:\Users\evand\RiderProjects\Premix\obj\Debug\net9.0\Avalonia\Resources.Inputs.cache
+C:\Users\evand\RiderProjects\Premix\obj\Debug\net9.0\Avalonia\resources
+C:\Users\evand\RiderProjects\Premix\obj\Debug\net9.0\Premix.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\evand\RiderProjects\Premix\obj\Debug\net9.0\Premix.AssemblyInfoInputs.cache
+C:\Users\evand\RiderProjects\Premix\obj\Debug\net9.0\Premix.AssemblyInfo.cs
+C:\Users\evand\RiderProjects\Premix\obj\Debug\net9.0\Premix.csproj.CoreCompileInputs.cache
+C:\Users\evand\RiderProjects\Premix\obj\Debug\net9.0\Premix.csproj.Up2Date
+C:\Users\evand\RiderProjects\Premix\obj\Debug\net9.0\Premix.dll
+C:\Users\evand\RiderProjects\Premix\obj\Debug\net9.0\refint\Premix.dll
+C:\Users\evand\RiderProjects\Premix\obj\Debug\net9.0\Premix.pdb
+C:\Users\evand\RiderProjects\Premix\obj\Debug\net9.0\Premix.genruntimeconfig.cache
+C:\Users\evand\RiderProjects\Premix\obj\Debug\net9.0\ref\Premix.dll
+C:\Users\evand\RiderProjects\Premix\bin\Debug\net9.0\Avalonia.Svg.Skia.dll
+C:\Users\evand\RiderProjects\Premix\bin\Debug\net9.0\ExCSS.dll
+C:\Users\evand\RiderProjects\Premix\bin\Debug\net9.0\ShimSkiaSharp.dll
+C:\Users\evand\RiderProjects\Premix\bin\Debug\net9.0\SkiaSharp.HarfBuzz.dll
+C:\Users\evand\RiderProjects\Premix\bin\Debug\net9.0\Svg.Custom.dll
+C:\Users\evand\RiderProjects\Premix\bin\Debug\net9.0\Svg.Model.dll
+C:\Users\evand\RiderProjects\Premix\bin\Debug\net9.0\Svg.Skia.dll
+C:\Users\evand\RiderProjects\Premix\bin\Debug\net9.0\CommunityToolkit.Mvvm.dll
+C:\Users\evand\RiderProjects\Premix\bin\Debug\net9.0\Avalonia.Controls.DataGrid.dll
+C:\Users\evand\RiderProjects\Premix\bin\Debug\net9.0\LiveChartsCore.dll
+C:\Users\evand\RiderProjects\Premix\bin\Debug\net9.0\LiveChartsCore.SkiaSharpView.dll
+C:\Users\evand\RiderProjects\Premix\bin\Debug\net9.0\LiveChartsCore.SkiaSharpView.Avalonia.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\Premix.exe
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\Premix.deps.json
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\Premix.runtimeconfig.json
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\Premix.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\Premix.pdb
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\Avalonia.Base.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\Avalonia.Controls.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\Avalonia.DesignerSupport.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\Avalonia.Dialogs.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\Avalonia.Markup.Xaml.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\Avalonia.Markup.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\Avalonia.Metal.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\Avalonia.MicroCom.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\Avalonia.OpenGL.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\Avalonia.Vulkan.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\Avalonia.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\Avalonia.Controls.ColorPicker.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\Avalonia.Controls.DataGrid.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\Avalonia.Desktop.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\Avalonia.Diagnostics.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\Avalonia.Fonts.Inter.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\Avalonia.FreeDesktop.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\Avalonia.Native.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\Avalonia.Remote.Protocol.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\Avalonia.Skia.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\Avalonia.Svg.Skia.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\Avalonia.Themes.Fluent.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\Avalonia.Themes.Simple.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\Avalonia.Win32.Automation.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\Avalonia.Win32.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\Avalonia.X11.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\CommunityToolkit.Mvvm.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\ExCSS.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\HarfBuzzSharp.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\LiveChartsCore.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\LiveChartsCore.SkiaSharpView.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\LiveChartsCore.SkiaSharpView.Avalonia.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\MicroCom.Runtime.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\ShimSkiaSharp.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\SkiaSharp.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\SkiaSharp.HarfBuzz.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\Svg.Custom.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\Svg.Model.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\Svg.Skia.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\Tmds.DBus.Protocol.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\runtimes\win-arm64\native\av_libglesv2.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\runtimes\win-x64\native\av_libglesv2.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\runtimes\win-x86\native\av_libglesv2.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\runtimes\osx\native\libAvaloniaNative.dylib
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\runtimes\linux-arm\native\libHarfBuzzSharp.so
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\runtimes\linux-arm64\native\libHarfBuzzSharp.so
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\runtimes\linux-loongarch64\native\libHarfBuzzSharp.so
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\runtimes\linux-musl-arm\native\libHarfBuzzSharp.so
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\runtimes\linux-musl-arm64\native\libHarfBuzzSharp.so
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\runtimes\linux-musl-loongarch64\native\libHarfBuzzSharp.so
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\runtimes\linux-musl-riscv64\native\libHarfBuzzSharp.so
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\runtimes\linux-musl-x64\native\libHarfBuzzSharp.so
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\runtimes\linux-riscv64\native\libHarfBuzzSharp.so
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\runtimes\linux-x64\native\libHarfBuzzSharp.so
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\runtimes\linux-x86\native\libHarfBuzzSharp.so
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\runtimes\osx\native\libHarfBuzzSharp.dylib
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\runtimes\win-arm64\native\libHarfBuzzSharp.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\runtimes\win-x64\native\libHarfBuzzSharp.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\runtimes\win-x86\native\libHarfBuzzSharp.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\runtimes\linux-arm\native\libSkiaSharp.so
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\runtimes\linux-arm64\native\libSkiaSharp.so
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\runtimes\linux-musl-x64\native\libSkiaSharp.so
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\runtimes\linux-x64\native\libSkiaSharp.so
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\runtimes\osx\native\libSkiaSharp.dylib
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\runtimes\win-arm64\native\libSkiaSharp.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\runtimes\win-x64\native\libSkiaSharp.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\runtimes\win-x86\native\libSkiaSharp.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\obj\Debug\net9.0\Premix.csproj.AssemblyReference.cache
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\obj\Debug\net9.0\Avalonia\Resources.Inputs.cache
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\obj\Debug\net9.0\Avalonia\resources
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\obj\Debug\net9.0\Premix.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\obj\Debug\net9.0\Premix.AssemblyInfoInputs.cache
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\obj\Debug\net9.0\Premix.AssemblyInfo.cs
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\obj\Debug\net9.0\Premix.csproj.CoreCompileInputs.cache
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\obj\Debug\net9.0\Premix.csproj.Up2Date
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\obj\Debug\net9.0\Premix.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\obj\Debug\net9.0\refint\Premix.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\obj\Debug\net9.0\Premix.pdb
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\obj\Debug\net9.0\Premix.genruntimeconfig.cache
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\obj\Debug\net9.0\ref\Premix.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\AWSSDK.Core.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\AWSSDK.SecurityToken.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\DnsClient.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\MongoDB.Bson.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\MongoDB.Driver.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\MongoDB.Driver.Core.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\MongoDB.Libmongocrypt.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\SharpCompress.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\Snappier.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\ZstdSharp.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\runtimes\linux\native\libmongocrypt.so
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\runtimes\osx\native\libmongocrypt.dylib
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(4)\Premix\bin\Debug\net9.0\runtimes\win\native\mongocrypt.dll
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\Premix.exe
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\Premix.deps.json
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\Premix.runtimeconfig.json
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\Premix.dll
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\Premix.pdb
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\Avalonia.Base.dll
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\Avalonia.Controls.dll
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\Avalonia.DesignerSupport.dll
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\Avalonia.Dialogs.dll
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\Avalonia.Markup.Xaml.dll
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\Avalonia.Markup.dll
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\Avalonia.Metal.dll
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\Avalonia.MicroCom.dll
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\Avalonia.OpenGL.dll
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\Avalonia.Vulkan.dll
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\Avalonia.dll
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\Avalonia.Controls.ColorPicker.dll
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\Avalonia.Controls.DataGrid.dll
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\Avalonia.Desktop.dll
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\Avalonia.Diagnostics.dll
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\Avalonia.Fonts.Inter.dll
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\Avalonia.FreeDesktop.dll
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\Avalonia.Native.dll
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\Avalonia.Remote.Protocol.dll
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\Avalonia.Skia.dll
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\Avalonia.Svg.Skia.dll
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\Avalonia.Themes.Fluent.dll
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\Avalonia.Themes.Simple.dll
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\Avalonia.Win32.Automation.dll
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\Avalonia.Win32.dll
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\Avalonia.X11.dll
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\AWSSDK.Core.dll
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\AWSSDK.SecurityToken.dll
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\CommunityToolkit.Mvvm.dll
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\DnsClient.dll
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\ExCSS.dll
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\HarfBuzzSharp.dll
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\LiveChartsCore.dll
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\LiveChartsCore.SkiaSharpView.dll
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\LiveChartsCore.SkiaSharpView.Avalonia.dll
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\MicroCom.Runtime.dll
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\MongoDB.Bson.dll
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\MongoDB.Driver.dll
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\MongoDB.Driver.Core.dll
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\MongoDB.Libmongocrypt.dll
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\SharpCompress.dll
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\ShimSkiaSharp.dll
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\SkiaSharp.dll
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\SkiaSharp.HarfBuzz.dll
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\Snappier.dll
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\Svg.Custom.dll
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\Svg.Model.dll
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\Svg.Skia.dll
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\Tmds.DBus.Protocol.dll
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\ZstdSharp.dll
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\runtimes\win-arm64\native\av_libglesv2.dll
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\runtimes\win-x64\native\av_libglesv2.dll
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\runtimes\win-x86\native\av_libglesv2.dll
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\runtimes\osx\native\libAvaloniaNative.dylib
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\runtimes\linux-arm\native\libHarfBuzzSharp.so
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\runtimes\linux-arm64\native\libHarfBuzzSharp.so
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\runtimes\linux-loongarch64\native\libHarfBuzzSharp.so
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\runtimes\linux-musl-arm\native\libHarfBuzzSharp.so
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\runtimes\linux-musl-arm64\native\libHarfBuzzSharp.so
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\runtimes\linux-musl-loongarch64\native\libHarfBuzzSharp.so
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\runtimes\linux-musl-riscv64\native\libHarfBuzzSharp.so
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\runtimes\linux-musl-x64\native\libHarfBuzzSharp.so
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\runtimes\linux-riscv64\native\libHarfBuzzSharp.so
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\runtimes\linux-x64\native\libHarfBuzzSharp.so
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\runtimes\linux-x86\native\libHarfBuzzSharp.so
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\runtimes\osx\native\libHarfBuzzSharp.dylib
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\runtimes\win-arm64\native\libHarfBuzzSharp.dll
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\runtimes\win-x64\native\libHarfBuzzSharp.dll
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\runtimes\win-x86\native\libHarfBuzzSharp.dll
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\runtimes\linux\native\libmongocrypt.so
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\runtimes\osx\native\libmongocrypt.dylib
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\runtimes\win\native\mongocrypt.dll
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\runtimes\linux-arm\native\libSkiaSharp.so
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\runtimes\linux-arm64\native\libSkiaSharp.so
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\runtimes\linux-musl-x64\native\libSkiaSharp.so
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\runtimes\linux-x64\native\libSkiaSharp.so
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\runtimes\osx\native\libSkiaSharp.dylib
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\runtimes\win-arm64\native\libSkiaSharp.dll
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\runtimes\win-x64\native\libSkiaSharp.dll
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\runtimes\win-x86\native\libSkiaSharp.dll
+C:\Users\evand\Downloads\Premix\Premix\obj\Debug\net9.0\Premix.csproj.AssemblyReference.cache
+C:\Users\evand\Downloads\Premix\Premix\obj\Debug\net9.0\Avalonia\Resources.Inputs.cache
+C:\Users\evand\Downloads\Premix\Premix\obj\Debug\net9.0\Avalonia\resources
+C:\Users\evand\Downloads\Premix\Premix\obj\Debug\net9.0\Premix.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\evand\Downloads\Premix\Premix\obj\Debug\net9.0\Premix.AssemblyInfoInputs.cache
+C:\Users\evand\Downloads\Premix\Premix\obj\Debug\net9.0\Premix.AssemblyInfo.cs
+C:\Users\evand\Downloads\Premix\Premix\obj\Debug\net9.0\Premix.csproj.CoreCompileInputs.cache
+C:\Users\evand\Downloads\Premix\Premix\obj\Debug\net9.0\Premix.csproj.Up2Date
+C:\Users\evand\Downloads\Premix\Premix\obj\Debug\net9.0\Premix.dll
+C:\Users\evand\Downloads\Premix\Premix\obj\Debug\net9.0\refint\Premix.dll
+C:\Users\evand\Downloads\Premix\Premix\obj\Debug\net9.0\Premix.pdb
+C:\Users\evand\Downloads\Premix\Premix\obj\Debug\net9.0\Premix.genruntimeconfig.cache
+C:\Users\evand\Downloads\Premix\Premix\obj\Debug\net9.0\ref\Premix.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\Premix.exe
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\Premix.deps.json
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\Premix.runtimeconfig.json
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\Premix.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\Premix.pdb
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\Avalonia.Base.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\Avalonia.Controls.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\Avalonia.DesignerSupport.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\Avalonia.Dialogs.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\Avalonia.Markup.Xaml.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\Avalonia.Markup.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\Avalonia.Metal.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\Avalonia.MicroCom.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\Avalonia.OpenGL.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\Avalonia.Vulkan.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\Avalonia.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\Avalonia.Controls.ColorPicker.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\Avalonia.Controls.DataGrid.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\Avalonia.Desktop.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\Avalonia.Diagnostics.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\Avalonia.Fonts.Inter.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\Avalonia.FreeDesktop.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\Avalonia.Native.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\Avalonia.Remote.Protocol.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\Avalonia.Skia.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\Avalonia.Svg.Skia.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\Avalonia.Themes.Fluent.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\Avalonia.Themes.Simple.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\Avalonia.Win32.Automation.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\Avalonia.Win32.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\Avalonia.X11.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\AWSSDK.Core.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\AWSSDK.SecurityToken.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\CommunityToolkit.Mvvm.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\DnsClient.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\ExCSS.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\HarfBuzzSharp.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\LiveChartsCore.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\LiveChartsCore.SkiaSharpView.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\LiveChartsCore.SkiaSharpView.Avalonia.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\MicroCom.Runtime.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\MongoDB.Bson.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\MongoDB.Driver.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\MongoDB.Driver.Core.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\MongoDB.Libmongocrypt.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\SharpCompress.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\ShimSkiaSharp.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\SkiaSharp.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\SkiaSharp.HarfBuzz.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\Snappier.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\Svg.Custom.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\Svg.Model.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\Svg.Skia.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\Tmds.DBus.Protocol.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\ZstdSharp.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\runtimes\win-arm64\native\av_libglesv2.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\runtimes\win-x64\native\av_libglesv2.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\runtimes\win-x86\native\av_libglesv2.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\runtimes\osx\native\libAvaloniaNative.dylib
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\runtimes\linux-arm\native\libHarfBuzzSharp.so
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\runtimes\linux-arm64\native\libHarfBuzzSharp.so
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\runtimes\linux-loongarch64\native\libHarfBuzzSharp.so
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\runtimes\linux-musl-arm\native\libHarfBuzzSharp.so
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\runtimes\linux-musl-arm64\native\libHarfBuzzSharp.so
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\runtimes\linux-musl-loongarch64\native\libHarfBuzzSharp.so
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\runtimes\linux-musl-riscv64\native\libHarfBuzzSharp.so
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\runtimes\linux-musl-x64\native\libHarfBuzzSharp.so
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\runtimes\linux-riscv64\native\libHarfBuzzSharp.so
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\runtimes\linux-x64\native\libHarfBuzzSharp.so
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\runtimes\linux-x86\native\libHarfBuzzSharp.so
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\runtimes\osx\native\libHarfBuzzSharp.dylib
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\runtimes\win-arm64\native\libHarfBuzzSharp.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\runtimes\win-x64\native\libHarfBuzzSharp.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\runtimes\win-x86\native\libHarfBuzzSharp.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\runtimes\linux\native\libmongocrypt.so
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\runtimes\osx\native\libmongocrypt.dylib
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\runtimes\win\native\mongocrypt.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\runtimes\linux-arm\native\libSkiaSharp.so
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\runtimes\linux-arm64\native\libSkiaSharp.so
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\runtimes\linux-musl-x64\native\libSkiaSharp.so
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\runtimes\linux-x64\native\libSkiaSharp.so
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\runtimes\osx\native\libSkiaSharp.dylib
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\runtimes\win-arm64\native\libSkiaSharp.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\runtimes\win-x64\native\libSkiaSharp.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\runtimes\win-x86\native\libSkiaSharp.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\obj\Debug\net9.0\Premix.csproj.AssemblyReference.cache
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\obj\Debug\net9.0\Avalonia\Resources.Inputs.cache
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\obj\Debug\net9.0\Avalonia\resources
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\obj\Debug\net9.0\Premix.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\obj\Debug\net9.0\Premix.AssemblyInfoInputs.cache
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\obj\Debug\net9.0\Premix.AssemblyInfo.cs
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\obj\Debug\net9.0\Premix.csproj.CoreCompileInputs.cache
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\obj\Debug\net9.0\Premix.csproj.Up2Date
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\obj\Debug\net9.0\Premix.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\obj\Debug\net9.0\refint\Premix.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\obj\Debug\net9.0\Premix.pdb
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\obj\Debug\net9.0\Premix.genruntimeconfig.cache
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\obj\Debug\net9.0\ref\Premix.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\DialogHost.Avalonia.dll
+C:\Users\foxbo\OneDrive\Área de Trabalho\Premix(8)\Premix\bin\Debug\net9.0\MsBox.Avalonia.dll
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\DialogHost.Avalonia.dll
+C:\Users\evand\Downloads\Premix\Premix\bin\Debug\net9.0\MsBox.Avalonia.dll
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\Premix.exe
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\Premix.deps.json
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\Premix.runtimeconfig.json
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\Premix.dll
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\Premix.pdb
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\Avalonia.Base.dll
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\Avalonia.Controls.dll
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\Avalonia.DesignerSupport.dll
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\Avalonia.Dialogs.dll
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\Avalonia.Markup.Xaml.dll
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\Avalonia.Markup.dll
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\Avalonia.Metal.dll
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\Avalonia.MicroCom.dll
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\Avalonia.OpenGL.dll
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\Avalonia.Vulkan.dll
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\Avalonia.dll
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\Avalonia.Controls.ColorPicker.dll
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\Avalonia.Controls.DataGrid.dll
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\Avalonia.Desktop.dll
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\Avalonia.Diagnostics.dll
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\Avalonia.Fonts.Inter.dll
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\Avalonia.FreeDesktop.dll
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\Avalonia.Native.dll
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\Avalonia.Remote.Protocol.dll
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\Avalonia.Skia.dll
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\Avalonia.Svg.Skia.dll
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\Avalonia.Themes.Fluent.dll
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\Avalonia.Themes.Simple.dll
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\Avalonia.Win32.Automation.dll
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\Avalonia.Win32.dll
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\Avalonia.X11.dll
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\AWSSDK.Core.dll
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\AWSSDK.SecurityToken.dll
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\CommunityToolkit.Mvvm.dll
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\DialogHost.Avalonia.dll
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\DnsClient.dll
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\ExCSS.dll
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\HarfBuzzSharp.dll
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\LiveChartsCore.dll
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\LiveChartsCore.SkiaSharpView.dll
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\LiveChartsCore.SkiaSharpView.Avalonia.dll
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\MsBox.Avalonia.dll
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\MicroCom.Runtime.dll
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\MongoDB.Bson.dll
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\MongoDB.Driver.dll
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\MongoDB.Driver.Core.dll
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\MongoDB.Libmongocrypt.dll
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\SharpCompress.dll
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\ShimSkiaSharp.dll
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\SkiaSharp.dll
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\SkiaSharp.HarfBuzz.dll
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\Snappier.dll
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\Svg.Custom.dll
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\Svg.Model.dll
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\Svg.Skia.dll
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\Tmds.DBus.Protocol.dll
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\ZstdSharp.dll
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\runtimes\win-arm64\native\av_libglesv2.dll
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\runtimes\win-x64\native\av_libglesv2.dll
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\runtimes\win-x86\native\av_libglesv2.dll
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\runtimes\osx\native\libAvaloniaNative.dylib
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\runtimes\linux-arm\native\libHarfBuzzSharp.so
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\runtimes\linux-arm64\native\libHarfBuzzSharp.so
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\runtimes\linux-loongarch64\native\libHarfBuzzSharp.so
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\runtimes\linux-musl-arm\native\libHarfBuzzSharp.so
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\runtimes\linux-musl-arm64\native\libHarfBuzzSharp.so
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\runtimes\linux-musl-loongarch64\native\libHarfBuzzSharp.so
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\runtimes\linux-musl-riscv64\native\libHarfBuzzSharp.so
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\runtimes\linux-musl-x64\native\libHarfBuzzSharp.so
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\runtimes\linux-riscv64\native\libHarfBuzzSharp.so
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\runtimes\linux-x64\native\libHarfBuzzSharp.so
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\runtimes\linux-x86\native\libHarfBuzzSharp.so
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\runtimes\osx\native\libHarfBuzzSharp.dylib
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\runtimes\win-arm64\native\libHarfBuzzSharp.dll
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\runtimes\win-x64\native\libHarfBuzzSharp.dll
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\runtimes\win-x86\native\libHarfBuzzSharp.dll
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\runtimes\linux\native\libmongocrypt.so
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\runtimes\osx\native\libmongocrypt.dylib
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\runtimes\win\native\mongocrypt.dll
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\runtimes\linux-arm\native\libSkiaSharp.so
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\runtimes\linux-arm64\native\libSkiaSharp.so
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\runtimes\linux-musl-x64\native\libSkiaSharp.so
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\runtimes\linux-x64\native\libSkiaSharp.so
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\runtimes\osx\native\libSkiaSharp.dylib
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\runtimes\win-arm64\native\libSkiaSharp.dll
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\runtimes\win-x64\native\libSkiaSharp.dll
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\bin\Debug\net9.0\runtimes\win-x86\native\libSkiaSharp.dll
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\obj\Debug\net9.0\Premix.csproj.AssemblyReference.cache
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\obj\Debug\net9.0\Avalonia\Resources.Inputs.cache
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\obj\Debug\net9.0\Avalonia\resources
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\obj\Debug\net9.0\Premix.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\obj\Debug\net9.0\Premix.AssemblyInfoInputs.cache
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\obj\Debug\net9.0\Premix.AssemblyInfo.cs
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\obj\Debug\net9.0\Premix.csproj.CoreCompileInputs.cache
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\obj\Debug\net9.0\Premix.csproj.Up2Date
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\obj\Debug\net9.0\Premix.dll
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\obj\Debug\net9.0\refint\Premix.dll
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\obj\Debug\net9.0\Premix.pdb
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\obj\Debug\net9.0\Premix.genruntimeconfig.cache
+C:\Users\Usr_ROOT\Desktop\Premix (1)\Premix\obj\Debug\net9.0\ref\Premix.dll
